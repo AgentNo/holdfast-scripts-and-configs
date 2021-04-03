@@ -7,9 +7,9 @@ game_mode MeleeArena
 game_type hardcore
 round_time_minutes 4
 round_spawn_close_timer_seconds 35
-round_spawn_close_timer_seconds_between_rounds 20
+round_spawn_close_timer_seconds_between_rounds 15
 amount_of_rounds 15
-faction_balancing true
+faction_balancing false
 faction_balancing_discrepancy_amount 1
 allow_faction_switching false
 allow_spectating true
