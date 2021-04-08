@@ -1,6 +1,6 @@
 mods_installed 2446867040 # de_airstrip (1.6)
 
-#X - de_airstrip (1.6) (Army Battlefield) - Calm | Night (20)
+#X - de_airstrip (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield

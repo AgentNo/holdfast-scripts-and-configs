@@ -133,7 +133,7 @@ rc set meleeArenaAllowShooting true
 !map_rotation end
 
 
-#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
