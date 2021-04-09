@@ -5,7 +5,7 @@ mods_installed 2442020077 # cs_747 (1.6)
 map_name ModMap
 game_mode MeleeArena
 game_type hardcore
-round_time_minutes 4
+round_time_minutes -1
 round_spawn_close_timer_seconds 35
 round_spawn_close_timer_seconds_between_rounds 15
 amount_of_rounds 15
