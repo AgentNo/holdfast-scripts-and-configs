@@ -487,7 +487,7 @@ firearm_ammo_override Prussian Riflema Musket_NewLandLightInfantryPatternBrownBe
 firearm_ammo_override Russian Rifleman Musket_NewLandLightInfantryPatternBrownBess 15 15 15
  
 #Loaded Modifications
-load_mods 2453190571 # de_aztec (1.6)
+load_mod 2453190571 # de_aztec (1.6)
  
 rc set meleeArenaAllowShooting true
  
