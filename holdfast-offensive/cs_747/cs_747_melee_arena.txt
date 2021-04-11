@@ -109,7 +109,7 @@ firearm_ammo_override Prussian Grenadier Musket_IndiaPatternBrownBess 20 20 20
 firearm_ammo_override Russian Grenadier Musket_IndiaPatternBrownBess 20 20 20
 firearm_ammo_override British Rifleman Musket_NewLandLightInfantryPatternBrownBess 15 15 15
 firearm_ammo_override French Rifleman Musket_NewLandLightInfantryPatternBrownBess 15 15 15
-firearm_ammo_override Prussian Riflema Musket_NewLandLightInfantryPatternBrownBess 15 15 15
+firearm_ammo_override Prussian Rifleman Musket_NewLandLightInfantryPatternBrownBess 15 15 15
 firearm_ammo_override Russian Rifleman Musket_NewLandLightInfantryPatternBrownBess 15 15 15
  
 #Loaded Modifications
