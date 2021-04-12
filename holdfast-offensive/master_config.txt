@@ -512,7 +512,7 @@ minimum_players -1
 maximum_players 40
 time_hour 22
 time_dynamic false
-weather_preset storm
+weather_preset calm
 weather_dynamic false
 faction_attacking french
 faction_defending british
