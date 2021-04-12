@@ -1,0 +1,120 @@
+mods_installed 2455363876 # cs_backalley (1.6)
+
+#X - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night (22)
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 15
+amount_of_rounds 15
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 22
+time_dynamic false
+weather_preset storm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+
+# WEAPONS 
+starting_weapons_override British ArmyLineOfficer 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override French ArmyLineOfficer 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Prussian ArmyLineOfficer 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Russian ArmyLineOfficer 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed 
+starting_weapons_override British ArmyLineInfantry 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override French ArmyLineInfantry 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Prussian ArmyLineInfantry 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Russian ArmyLineInfantry 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override British Rifleman 2 10 Rifle_Pattern1800Infantry Knife_Variation1 Unarmed
+starting_weapons_override French Rifleman 2 10 Rifle_Pattern1800Infantry Knife_Variation1 Unarmed
+starting_weapons_override Prussian Rifleman 2 10 Rifle_Pattern1800Infantry Sword_Bayonet Knife_Variation1 Unarmed
+starting_weapons_override Russian Rifleman 2 10 Rifle_Pattern1800Infantry Sword_Bayonet Knife_Variation1 Unarmed
+starting_weapons_override British Carpenter 2 10 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2 Unarmed
+starting_weapons_override French Carpenter 2 10 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2 Unarmed
+starting_weapons_override Prussian Carpenter 2 10 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2 Unarmed
+starting_weapons_override Russian Carpenter 2 10 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2 Unarmed
+starting_weapons_override British Guard 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override French Guard 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Prussian Guard 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Russian Guard 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override British Grenadier 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override French Grenadier 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Prussian Grenadier 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Russian Grenadier 2 10 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override British Surgeon 1 10 Pistol_NewLandPattern Knife_Variation1 Unarmed
+starting_weapons_override French Surgeon 1 10 Pistol_NewLandPattern Knife_Variation1 Unarmed
+starting_weapons_override Prussian Surgeon 1 10 Pistol_NewLandPattern Knife_Variation1 Unarmed
+starting_weapons_override Russian Surgeon 1 10 Pistol_NewLandPattern Knife_Variation1 Unarmed
+starting_weapons_override British LightInfantry 1 10 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override French LightInfantry 1 10 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Prussian LightInfantry 1 10 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1 Unarmed
+starting_weapons_override Russian LightInfantry 1 10 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1 Unarmed
+ 
+#PISTOL
+firearm_ammo_override British ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Prussian ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Russian ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Prussian Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Russian Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Prussian Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Russian Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Prussian Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override Russian Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Surgeon Pistol_NewLandPattern 10 10 10
+firearm_ammo_override French Surgeon Pistol_NewLandPattern 10 10 10
+firearm_ammo_override Prussian Surgeon Pistol_NewLandPattern 10 10 10
+firearm_ammo_override Russian Surgeon Pistol_NewLandPattern 10 10 10
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override British ArmyLineOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override French ArmyLineOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override Prussian ArmyLineOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override Russian ArmyLineOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override British ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Prussian ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Russian ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British Rifleman Rifle_Pattern1800Infantry 15 15 15
+firearm_ammo_override French Rifleman Rifle_Pattern1800Infantry 15 15 15
+firearm_ammo_override Prussian Rifleman Rifle_Pattern1800Infantry 15 15 15
+firearm_ammo_override Russian Rifleman Rifle_Pattern1800Infantry 15 15 15
+firearm_ammo_override British Carpenter Blunderbuss_Variation2 15 15 15
+firearm_ammo_override French Carpenter Blunderbuss_Variation2 15 15 15
+firearm_ammo_override Prussian Carpenter Blunderbuss_Variation2 15 15 15
+firearm_ammo_override Russian Carpenter Blunderbuss_Variation2 15 15 15
+firearm_ammo_override British Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Prussian Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Russian Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Prussian Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override Russian Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British LightInfantry Musket_NewLandLightInfantryPatternBrownBess 15 15 15
+firearm_ammo_override French LightInfantry Musket_NewLandLightInfantryPatternBrownBess 15 15 15
+firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 15 15 15
+firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 15 15 15
+ 
+#Loaded Modifications
+load_mod 2455363876 # cs_backalley (1.6)
+ 
+rc set meleeArenaAllowShooting true
+ 
+!map_rotation end
