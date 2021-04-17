@@ -1,6 +1,6 @@
 mods_installed 2460225321 # de_cbble (1.6)
 
-#X - de_chateau (1.6) (Army Battlefield) - Calm | Morning (9)
+#X - de_chateau (1.6) (Army Battlefield) - Calm | Morning (7.5)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -17,7 +17,7 @@ allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 9
+time_hour 7.5
 time_dynamic false
 weather_preset calm
 weather_dynamic false
