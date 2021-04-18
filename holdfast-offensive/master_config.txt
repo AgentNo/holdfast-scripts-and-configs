@@ -20,7 +20,7 @@ mods_installed 2461540045 # de_dust (1.6)
 map_name ModMap
 game_mode ArmyBattlefield
 round_time_minutes 20
-reinforcements_per_faction 545
+reinforcements_per_faction 99999
 wave_spawn_time_seconds 10
 wave_spawn_vehicle_time_seconds 20
 spawn_immunity_timer 5
