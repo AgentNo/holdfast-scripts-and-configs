@@ -47,6 +47,7 @@ load_mods 2461540045 # de_dust (1.6)
 
 !map_rotation end
 
+
 #2 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night (20)
 !map_rotation start
 map_name ModMap
