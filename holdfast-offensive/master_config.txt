@@ -15,24 +15,24 @@ mods_installed 2461540045 # de_dust (1.6)
 
 ###- Map Rotations
 
-#1 - de_dust (1.6) (Army Battlefield) - Calm | Day (13) - STAGING
+#1 = Spanish Farm (Battlefield) - Calm | Morning (9) - STAGING
 !map_rotation start
-map_name ModMap
+map_name spanishfarm
 game_mode ArmyBattlefield
 round_time_minutes -1
 reinforcements_per_faction 99999
-wave_spawn_time_seconds 5
+wave_spawn_time_seconds 10
 wave_spawn_vehicle_time_seconds 20
 spawn_immunity_timer 5
 max_player_respawns -1
-faction_balancing false
-faction_balancing_discrepancy_amount 0
+faction_balancing true
+faction_balancing_discrepancy_amount 8
 allow_midround_spawning true
 allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
+time_hour 9
 time_dynamic false
 weather_preset calm
 weather_dynamic false
@@ -41,10 +41,19 @@ faction_defending british
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
+sappers_attacking_starting_materials 70
+sappers_defending_starting_materials 70
+sappers_buildlimit explosivebarrel attacking 3
+sappers_buildlimit explosivebarrel defending 3
+sappers_buildlimit palisade attacking 3
+sappers_buildlimit palisade defending 3
+sappers_buildlimit shootingplatform attacking 3
+sappers_buildlimit shootingplatform defending 3
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 max_accumulated_faction_points -1
-
-# Loaded Modifications
-load_mods 2461540045 # de_dust (1.6)
 
 !map_rotation end
 
