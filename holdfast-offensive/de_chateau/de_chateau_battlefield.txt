@@ -28,6 +28,6 @@ friendly_fire_melee_bounce false
 damage_split 0
 
 # Loaded Modifications
-load_mods 2458269436 # de_chateau (1.6)
+load_mod 2458269436 # de_chateau (1.6)
 
 !map_rotation end

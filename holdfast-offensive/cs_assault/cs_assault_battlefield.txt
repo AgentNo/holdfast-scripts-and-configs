@@ -28,6 +28,6 @@ friendly_fire_melee_bounce false
 damage_split 0
 
 # Loaded Modifications
-load_mods 2450848347 # cs_assault (1.6)
+load_mod 2450848347 # cs_assault (1.6)
 
 !map_rotation end

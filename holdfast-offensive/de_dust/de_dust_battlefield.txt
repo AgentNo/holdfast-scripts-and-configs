@@ -28,6 +28,6 @@ friendly_fire_melee_bounce false
 damage_split 0
 
 # Loaded Modifications
-load_mods 2461540045 # de_dust (1.6)
+load_mod 2461540045 # de_dust (1.6)
 
 !map_rotation end
