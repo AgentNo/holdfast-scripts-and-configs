@@ -1383,7 +1383,7 @@ rc set meleeArenaAllowShooting true
 !map_rotation end
 
 
-#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1398,7 +1398,7 @@ allow_faction_switching false
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
+time_hour 9
 time_dynamic false
 weather_preset calm
 weather_dynamic false
