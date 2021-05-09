@@ -1,0 +1,454 @@
+# The master config holds the battlefield rotations for ALL the CS1.6 maps.
+# If you are using this for your server, please ensure you update the number of players!
+#----------------------------------------------------------------------------------------#
+
+# INSTALLED MODIFCATIONS
+# - MAPS
+mods_installed 2442020077 # cs_747 (1.6)
+mods_installed 2446867040 # de_airstrip (1.6)
+mods_installed 2450848347 # cs_assault (1.6)
+mods_installed 2453190571 # de_aztec (1.6)
+mods_installed 2455363876 # cs_backalley (1.6)
+mods_installed 2458269436 # de_chateau (1.6)
+mods_installed 2460225321 # de_cbble (1.6)
+mods_installed 2461540045 # de_dust (1.6)
+mods_installed 2465910424 # de_dust2 (1.6)
+mods_installed 2469751266 # cs_estate (1.6)
+mods_installed 2473910400 # cs_havana (1.6)
+mods_installed 2479088774 # de_inferno (1.6)
+
+###- Map Rotations
+
+#1 = Spanish Farm (Army Battlefield) - Calm | Morning (9) - STAGING
+!map_rotation start
+map_name spanishfarm
+game_mode ArmyBattlefield
+round_time_minutes -1
+reinforcements_per_faction 99999
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 9
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+sappers_attacking_starting_materials 70
+sappers_defending_starting_materials 70
+sappers_buildlimit explosivebarrel attacking 3
+sappers_buildlimit explosivebarrel defending 3
+sappers_buildlimit palisade attacking 3
+sappers_buildlimit palisade defending 3
+sappers_buildlimit shootingplatform attacking 3
+sappers_buildlimit shootingplatform defending 3
+max_accumulated_faction_points -1
+
+!map_rotation end
+
+
+#2 - cs_747 (1.6) (Army Battlefield) - Calm | Night (20)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 20
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2442020077 # cs_747 (1.6)
+
+!map_rotation end
+
+
+#3 - de_airstrip (1.6) (Army Battlefield) - Calm | Day (13)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2446867040 # de_airstrip (1.6)
+
+!map_rotation end
+
+
+#4 - cs_assault (1.6) (Army Battlefield) - Calm | Night (20)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 20
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2450848347 # cs_assault (1.6)
+
+!map_rotation end
+
+
+#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening (17)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 17
+time_dynamic false
+weather_preset storm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2453190571 # de_aztec (1.6)
+
+!map_rotation end
+
+
+#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night (22)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 22
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2455363876 # cs_backalley (1.6)
+
+!map_rotation end
+
+
+#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day (14)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2458269436 # de_chateau (1.6)
+
+!map_rotation end
+
+
+#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 7.5)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 7.5
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2460225321 # de_cbble (1.6)
+
+!map_rotation end
+
+
+#9 - de_dust (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2461540045 # de_dust (1.6)
+
+!map_rotation end
+
+
+#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2465910424 # de_dust2 (1.6)
+
+!map_rotation end
+
+
+#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 17.5
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2469751266 # cs_estate (1.6)
+
+!map_rotation end
+
+
+#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 20
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2473910400 # cs_havana (1.6)
+
+!map_rotation end
+
+
+#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 9
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2479088774 # de_inferno (1.6)
+
+!map_rotation end
