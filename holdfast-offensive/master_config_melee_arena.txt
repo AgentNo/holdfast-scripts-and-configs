@@ -1,5 +1,8 @@
-# The master config holds the melee arena rotations for ALL the CS1.6 maps.
+# The master config holds the Melee Arena rotations for all the CS1.6 maps.
 # If you are using this for your server, please ensure you update the number of players!
+# NOTE: For Melee Arena configurations, there is a bug where the weapon overrides will not load correctly
+# when first launching a map. To fix this, simply reload the map through the RA console. As long as the server
+# does not restart, any subsequent MA rotation in this config will work.
 #----------------------------------------------------------------------------------------#
 
 # INSTALLED MODIFCATIONS
