@@ -56,10 +56,6 @@ sappers_buildlimit palisade attacking 3
 sappers_buildlimit palisade defending 3
 sappers_buildlimit shootingplatform attacking 3
 sappers_buildlimit shootingplatform defending 3
-population_verylow_playable true
-population_low_playable true
-population_medium_playable true
-population_high_playable true
 max_accumulated_faction_points -1
 
 !map_rotation end
