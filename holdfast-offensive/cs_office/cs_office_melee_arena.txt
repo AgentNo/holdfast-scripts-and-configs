@@ -1,6 +1,6 @@
 mods_installed 2497055633 # cs_office (1.6)
 
-#X - cs_office (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
+#X - cs_office (1.6) (Hardcore Melee Arena) - Calm | Morning (7)
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -15,7 +15,7 @@ allow_faction_switching false
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 9
+time_hour 7
 time_dynamic false
 weather_preset calm
 weather_dynamic false
