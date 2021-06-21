@@ -27,6 +27,7 @@ mods_installed 2502884874 # as_oilrig (1.6)
 mods_installed 2505626269 # de_piranesi (1.6)
 mods_installed 2512247630 # de_prodigy (1.6)
 mods_installed 2521544540 # de_storm (1.6)
+mods_installed 2523430502 # de_train (1.6)
 
 ###- Map Rotations
 
