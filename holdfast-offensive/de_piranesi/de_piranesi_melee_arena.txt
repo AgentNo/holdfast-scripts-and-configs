@@ -1,4 +1,5 @@
 mods_installed 2505626269 # de_piranesi (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day (13)
 !map_rotation start
@@ -114,7 +115,8 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2505626269 # de_piranesi (1.6)
- 
+load_mod 2525192332 # CS 1.6 Sound Pack
+
 rc set meleeArenaAllowShooting true
  
 !map_rotation end

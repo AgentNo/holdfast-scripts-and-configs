@@ -28,6 +28,7 @@ mods_installed 2505626269 # de_piranesi (1.6)
 mods_installed 2512247630 # de_prodigy (1.6)
 mods_installed 2521544540 # de_storm (1.6)
 mods_installed 2523430502 # de_train (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 ###- Map Rotations
 
@@ -185,6 +186,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2442020077 # cs_747 (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -305,6 +307,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2446867040 # de_airstrip (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -425,6 +428,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2450848347 # cs_assault (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -545,6 +549,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2453190571 # de_aztec (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -665,6 +670,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2455363876 # cs_backalley (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -785,6 +791,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2458269436 # de_chateau (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -905,6 +912,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2460225321 # de_cbble (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1025,6 +1033,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2461540045 # de_dust (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1145,6 +1154,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2465910424 # de_dust2 (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1265,6 +1275,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2469751266 # cs_estate (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1385,6 +1396,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2473910400 # cs_havana (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1505,6 +1517,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2479088774 # de_inferno (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1625,6 +1638,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2482488478 # cs_italy (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1745,6 +1759,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2485403695 # cs_militia (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1865,6 +1880,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2492047106 # de_nuke (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -1985,6 +2001,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2497055633 # cs_office (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -2105,6 +2122,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2502884874 # as_oilrig (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -2225,6 +2243,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2505626269 # de_piranesi (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -2345,6 +2364,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2512247630 # de_prodigy (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -2465,6 +2485,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2521544540 # de_storm (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  
@@ -2585,6 +2606,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2523430502 # de_train (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
  

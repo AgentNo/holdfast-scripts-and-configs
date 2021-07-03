@@ -1,4 +1,5 @@
 mods_installed 2523430502 # de_train (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - de_train (1.6) (Hardcore Melee Arena) - Calm | Afternoon (15)
 !map_rotation start
@@ -114,7 +115,8 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2523430502 # de_train (1.6)
- 
+load_mod 2525192332 # CS 1.6 Sound Pack
+
 rc set meleeArenaAllowShooting true
  
 !map_rotation end

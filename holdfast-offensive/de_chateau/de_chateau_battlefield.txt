@@ -1,4 +1,5 @@
 mods_installed 2458269436 # de_chateau (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - de_chateau (1.6) (Army Battlefield) - Calm | Day (14)
 !map_rotation start
@@ -29,5 +30,6 @@ damage_split 0
 
 # Loaded Modifications
 load_mod 2458269436 # de_chateau (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
 
 !map_rotation end

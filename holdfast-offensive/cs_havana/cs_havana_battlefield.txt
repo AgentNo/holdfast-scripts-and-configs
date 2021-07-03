@@ -1,4 +1,5 @@
 mods_installed 2473910400 # cs_havana (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - cs_havana (1.6) (Army Battlefield) - Calm | Night (20)
 !map_rotation start

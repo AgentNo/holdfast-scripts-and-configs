@@ -1,4 +1,5 @@
 mods_installed 2450848347 # cs_assault (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - cs_assault (1.6) (Army Battlefield) - Calm | Night (20)
 !map_rotation start
@@ -29,5 +30,6 @@ damage_split 0
 
 # Loaded Modifications
 load_mod 2450848347 # cs_assault (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
 
 !map_rotation end

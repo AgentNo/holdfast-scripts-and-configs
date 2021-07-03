@@ -1,4 +1,5 @@
 mods_installed 2485403695 # cs_militia (1.6)
+mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - cs_militia (1.6) (Army Battlefield) - Calm | Morning (8.5)
 !map_rotation start
@@ -29,5 +30,6 @@ damage_split 0
 
 # Loaded Modifications
 load_mod 2485403695 # cs_militia (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
 
 !map_rotation end
