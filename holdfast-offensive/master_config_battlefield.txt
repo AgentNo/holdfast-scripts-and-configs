@@ -2,6 +2,9 @@
 # If you are using this for your server, please ensure you update the number of players!
 #----------------------------------------------------------------------------------------#
 
+###- Global Gameplay and Map Settings
+map_rotation_start_randomise true
+
 # INSTALLED MODIFCATIONS
 # - MAPS
 mods_installed 2442020077 # cs_747 (1.6)
@@ -28,46 +31,7 @@ mods_installed 2525192332 # CS 1.6 Sound Pack
 
 ###- Map Rotations
 
-#1 = Spanish Farm (Army Battlefield) - Calm | Morning (9) - STAGING
-!map_rotation start
-map_name spanishfarm
-game_mode ArmyBattlefield
-round_time_minutes -1
-reinforcements_per_faction 99999
-wave_spawn_time_seconds 10
-wave_spawn_vehicle_time_seconds 20
-spawn_immunity_timer 5
-max_player_respawns -1
-faction_balancing true
-faction_balancing_discrepancy_amount 8
-allow_midround_spawning true
-allow_faction_switching true
-allow_spectating true
-minimum_players -1
-maximum_players 40
-time_hour 9
-time_dynamic false
-weather_preset calm
-weather_dynamic false
-faction_attacking french
-faction_defending british
-friendly_fire true
-friendly_fire_melee_bounce false
-damage_split 0
-sappers_attacking_starting_materials 70
-sappers_defending_starting_materials 70
-sappers_buildlimit explosivebarrel attacking 3
-sappers_buildlimit explosivebarrel defending 3
-sappers_buildlimit palisade attacking 3
-sappers_buildlimit palisade defending 3
-sappers_buildlimit shootingplatform attacking 3
-sappers_buildlimit shootingplatform defending 3
-max_accumulated_faction_points -1
-
-!map_rotation end
-
-
-#2 - cs_747 (1.6) (Army Battlefield) - Calm | Night (20)
+#1 - cs_747 (1.6) (Army Battlefield) - Calm | Night (20)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -101,7 +65,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#3 - de_airstrip (1.6) (Army Battlefield) - Calm | Day (13)
+#2 - de_airstrip (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -135,7 +99,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#4 - cs_assault (1.6) (Army Battlefield) - Calm | Night (20)
+#3 - cs_assault (1.6) (Army Battlefield) - Calm | Night (20)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -169,7 +133,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening (17)
+#4 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening (17)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -203,7 +167,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night (22)
+#5 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night (22)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -237,7 +201,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day (14)
+#6 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day (14)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -271,7 +235,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 7.5)
+#7 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 7.5)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -305,7 +269,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#9 - de_dust (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#8 - de_dust (1.6) (Hardcore Melee Arena) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -339,7 +303,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#9 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -373,7 +337,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
+#10 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -407,7 +371,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+#11 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night (20)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -441,7 +405,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
+#12 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -475,7 +439,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#14 - cs_italy (1.6) (Army Battlefield) - Calm | Afternoon (15)
+#13 - cs_italy (1.6) (Army Battlefield) - Calm | Afternoon (15)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -509,7 +473,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#15 - cs_militia (1.6) (Army Battlefield) - Calm | Morning (8.5)
+#14 - cs_militia (1.6) (Army Battlefield) - Calm | Morning (8.5)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -543,7 +507,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#16 - de_nuke (1.6) (Army Battlefield) - Calm | Morning (9)
+#15 - de_nuke (1.6) (Army Battlefield) - Calm | Morning (9)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -577,7 +541,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#17 - cs_office (1.6) (Army Battlefield) - Calm | Morning (7)
+#16 - cs_office (1.6) (Army Battlefield) - Calm | Morning (7)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -611,7 +575,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#18 - de_piranesi (1.6) (Army Battlefield) - Calm | Day (13)
+#17 - de_piranesi (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -645,7 +609,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#19 - de_prodigy (1.6) (Army Battlefield) - Calm | Day (13)
+#18 - de_prodigy (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -679,7 +643,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#20 - de_storm (1.6) (Army Battlefield) - Storm | Evening (17)
+#19 - de_storm (1.6) (Army Battlefield) - Storm | Evening (17)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -713,7 +677,7 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 !map_rotation end
 
 
-#21 - de_train (1.6) (Army Battlefield) - Calm | Afternoon (15)
+#20 - de_train (1.6) (Army Battlefield) - Calm | Afternoon (15)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
