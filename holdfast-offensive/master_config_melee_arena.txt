@@ -28,28 +28,29 @@ mods_installed 2505626269 # de_piranesi (1.6)
 mods_installed 2512247630 # de_prodigy (1.6)
 mods_installed 2521544540 # de_storm (1.6)
 mods_installed 2523430502 # de_train (1.6)
+mods_installed 2544107036 # de_dust (1.6) - Battlefield Only
 mods_installed 2525192332 # CS 1.6 Sound Pack
 
 ###- Map Rotations
 
 #1 = Spanish Farm (Battlefield) - Calm | Morning (9) - STAGING
 !map_rotation start
-map_name spanishfarm
+map_name ModMap
 game_mode ArmyBattlefield
 round_time_minutes -1
 reinforcements_per_faction 99999
-wave_spawn_time_seconds 10
-wave_spawn_vehicle_time_seconds 20
+wave_spawn_time_seconds 5
+wave_spawn_vehicle_time_seconds 5
 spawn_immunity_timer 5
 max_player_respawns -1
-faction_balancing true
+faction_balancing false
 faction_balancing_discrepancy_amount 8
 allow_midround_spawning true
 allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 9
+time_hour 13
 time_dynamic false
 weather_preset calm
 weather_dynamic false
@@ -58,15 +59,11 @@ faction_defending british
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
-sappers_attacking_starting_materials 70
-sappers_defending_starting_materials 70
-sappers_buildlimit explosivebarrel attacking 3
-sappers_buildlimit explosivebarrel defending 3
-sappers_buildlimit palisade attacking 3
-sappers_buildlimit palisade defending 3
-sappers_buildlimit shootingplatform attacking 3
-sappers_buildlimit shootingplatform defending 3
 max_accumulated_faction_points -1
+
+# Loaded Modifications
+load_mod 2544107036 # de_dust (1.6) - Battlefield Only
+load_mod 2525192332 # CS 1.6 Sound Pack
 
 !map_rotation end
 
