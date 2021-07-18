@@ -32,6 +32,8 @@ public class TestScriptMod : IHoldfastSharedMethods {
             if (f1MenuInputField != null) {
                 var rcCommand = string.Format("serverAdmin slap {0} {1} {2}", playerId, damage, reason);
                 f1MenuInputField.onEndEdit.Invoke(rcCommand);
+                var rcWarnCommand = string.Format("serverAdmin privateMessage {0} {1}", playerId, reason);
+                f1MenuInputField.onEndEdit.Invoke(rcWarnCommand);
             }
         }
     }
