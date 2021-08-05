@@ -124,5 +124,6 @@ load_mod 2473910400 # cs_havana (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
  
 !map_rotation end

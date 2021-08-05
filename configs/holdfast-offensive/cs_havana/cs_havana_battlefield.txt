@@ -31,4 +31,6 @@ damage_split 0
 # Loaded Modifications
 load_mod 2473910400 # cs_havana (1.6)
 
+rc set characterWeaponDamageScale 0.75
+
 !map_rotation end

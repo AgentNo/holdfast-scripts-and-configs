@@ -32,4 +32,6 @@ damage_split 0
 load_mod 2465910424 # de_dust2 (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
 
+rc set characterWeaponDamageScale 0.75
+
 !map_rotation end

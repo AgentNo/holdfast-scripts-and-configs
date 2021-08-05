@@ -122,5 +122,6 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
 load_mod 2469751266 # cs_estate (1.6)
  
 rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
