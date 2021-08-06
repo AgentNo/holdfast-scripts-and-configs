@@ -2,8 +2,16 @@
 # If you are using this for your server, please ensure you update the number of players!
 # NOTE: For Melee Arena configurations, there is a bug where the weapon overrides will not load correctly
 # when first launching a map. To fix this, simply reload the map through the RA console. As long as the server
-# does not restart, any subsequent MA rotation in this config will work.
+# does not restart, any subsequent RA rotation in this config will work.
 #----------------------------------------------------------------------------------------#
+
+###- Global Gameplay & Map Settings
+map_rotation_start_randomise false
+map_voting_enabled true
+map_voting_duration 20
+map_voting_allow_same_map false
+map_voting_history_count 3
+map_voting_gameplay_modes MeleeArena
 
 # INSTALLED MODIFCATIONS
 # - MAPS
@@ -60,6 +68,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 max_accumulated_faction_points -1
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # Loaded Modifications
 load_mod 2544107036 # de_dust (1.6) - Battlefield Only
@@ -96,6 +108,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -223,6 +239,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -350,6 +370,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -477,6 +501,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -604,6 +632,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -731,6 +763,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -858,6 +894,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -985,6 +1025,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1112,6 +1156,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1239,6 +1287,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1366,6 +1418,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1493,6 +1549,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1620,6 +1680,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1747,6 +1811,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1874,6 +1942,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2001,6 +2073,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2128,6 +2204,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2255,6 +2335,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2382,6 +2466,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2509,6 +2597,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2636,6 +2728,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
