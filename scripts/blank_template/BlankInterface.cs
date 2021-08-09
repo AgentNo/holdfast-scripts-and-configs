@@ -6,27 +6,27 @@ using UnityEngine;
 
 public class BlankInterface : IHoldfastSharedMethods
 {
-    public void GetSyncValue(int value)
+    public void OnSyncValueState(int value)
     {
     }
 
-    public void GetSyncedTime(double time)
+    public void OnUpdateSyncedTime(double time)
     {
     }
 
-    public void GetTimeSinceStart(float time)
+    public void OnUpdateElapsedTime(float time)
     {
     }
 
-    public void GetTimeRemaining(float time)
+    public void OnUpdateTimeRemaining(float time)
     {
     }
 
-    public void IsServer(bool server)
+    public void OnIsServer(bool server)
     {
     }
 
-    public void IsClient(bool client, ulong steamId)
+    public void OnIsClient(bool client, ulong steamId)
     {
     }
 
@@ -46,11 +46,19 @@ public class BlankInterface : IHoldfastSharedMethods
     {
     }
 
-    public void OnPlayerSpawned(int playerId, int spawnSectionId, FactionCountry playerFaction, PlayerClass playerClass, int uniformId, GameObject playerObject, ulong steamId, string playerName, string regimentTag, bool isBot)
+    public void OnPlayerJoined(int playerId, ulong steamId, string playerName, string regimentTag, bool isBot)
     {
     }
 
-    public void OnScorableAction(int playerId, byte score, ScorableActionType reason)
+    public void OnPlayerLeft(int playerId)
+    {
+    }
+
+    public void OnPlayerSpawned(int playerId, int spawnSectionId, FactionCountry playerFaction, PlayerClass playerClass, int uniformId, GameObject playerObject)
+    {
+    }
+
+    public void OnScorableAction(int playerId, int score, ScorableActionType reason)
     {
     }
 
@@ -146,11 +154,27 @@ public class BlankInterface : IHoldfastSharedMethods
     {
     }
 
-    public void OnShipSpawned(int shipId, GameObject shipObject, FactionCountry shipfaction, ShipType shipType)
+    public void OnShipSpawned(int shipId, GameObject shipObject, FactionCountry shipfaction, ShipType shipType, int shipNameId)
     {
     }
 
     public void OnShipDamaged(int shipId, int oldHp, int newHp)
+    {
+    }
+
+    public void OnAdminPlayerAction(int playerId, int adminId, ServerAdminAction action, string reason)
+    {
+    }
+
+    public void OnConsoleCommand(string input, string output, bool success)
+    {
+    }
+
+    public void OnRCLogin(int playerId, string inputPassword, bool isLoggedIn)
+    {
+    }
+
+    public void OnRCCommand(int playerId, string input, string output, bool success)
     {
     }
 }
