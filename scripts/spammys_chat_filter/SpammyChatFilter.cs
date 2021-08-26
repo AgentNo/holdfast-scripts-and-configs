@@ -12,8 +12,8 @@ public class SpammyChatFilter : IHoldfastSharedMethods {
     private List<string> banned_words = new List<string>()
     {
         "***"
-    }; //The three stars will capture all the currently censored words in-game (for example, 'nazi' etc.). These are censored before the message is sent, so the actual words themselves cannot be slapped. Additional words here will 
-    private Dictionary<int, int> playerList = new Dictionary<int, int>(); //Maps playerId and the times the player has been slapped
+    }; //The three stars will capture all the currently censored words in-game (for example, 'nazi' etc.). These are censored before the message is sent, so the actual words themselves cannot be slapped.
+    private Dictionary<int, int> playerSlapList = new Dictionary<int, int>(); //Maps playerId and the times the player has been slapped
 
     public void OnIsServer(bool server) {
         //Get all the canvas items in the game
@@ -46,15 +46,13 @@ public class SpammyChatFilter : IHoldfastSharedMethods {
 
                     //Increment the player's slap count
                     int slapCount;
-                    playerList.TryGetValue(playerId, out slapCount);
-                    playerList[playerId] = slapCount + 1;
+                    playerSlapList.TryGetValue(playerId, out slapCount);
+                    playerSlapList[playerId] = slapCount + 1;
                     // Check if the player needs to be muted
-                    if (playerList[playerId] >= mute_threshold) {
-                        // Mute and PM the player
-                        string rcMuteCommand = string.Format("serverAdmin chatMute {0}", playerId);
+                    if (playerSlapList[playerId] == mute_threshold) {
+                        // Temp mute the player - this only needs to happen once per round
+                        var rcMuteCommand = string.Format("serverAdmin chatMute {0} {1}", playerId, "You are now auto-temp muted.");
                         f1MenuInputField.onEndEdit.Invoke(rcMuteCommand);
-                        string rcMutePMCommand = string.Format("serverAdmin privateMessage {0} {1}", playerId, mute_message);
-                        f1MenuInputField.onEndEdit.Invoke(rcMutePMCommand);
                     }
                     break; // Break so the entire list is not parsed every time - don't punish players for more than one word
                 }
@@ -97,13 +95,13 @@ public class SpammyChatFilter : IHoldfastSharedMethods {
 
     public void OnPlayerJoined(int playerId, ulong steamId, string playerName, string regimentTag, bool isBot) {
         // Add the player to the dictionary
-        playerList.Add(playerId, 0);
+        playerSlapList.Add(playerId, 0);
     }
 
     public void OnPlayerLeft(int playerId) {
         // If a player has left, remove them from the dictionary
-        if (playerList.ContainsKey(playerId)) {
-            playerList.Remove(playerId);
+        if (playerSlapList.ContainsKey(playerId)) {
+            playerSlapList.Remove(playerId);
         }
     }
 
