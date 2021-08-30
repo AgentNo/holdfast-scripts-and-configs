@@ -22,8 +22,8 @@ time_hour 9
 time_dynamic false
 weather_preset calm
 weather_dynamic false
-faction_attacking french
-faction_defending british
+faction_attacking british
+faction_defending french
 friendly_fire false
 friendly_fire_melee_bounce false
 damage_split 0
