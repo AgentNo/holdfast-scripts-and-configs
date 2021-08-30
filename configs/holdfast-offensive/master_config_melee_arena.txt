@@ -76,7 +76,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -209,7 +209,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -344,7 +344,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -479,7 +479,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -614,7 +614,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -749,7 +749,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -884,7 +884,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1019,7 +1019,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1154,7 +1154,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1289,7 +1289,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1424,7 +1424,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1559,7 +1559,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1694,7 +1694,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1829,7 +1829,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -1964,7 +1964,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2099,7 +2099,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2234,7 +2234,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2369,7 +2369,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2504,7 +2504,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2639,7 +2639,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2774,7 +2774,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2909,7 +2909,7 @@ population_medium_playable true
 population_high_playable true
 
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
