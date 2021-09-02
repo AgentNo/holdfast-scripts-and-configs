@@ -39,6 +39,8 @@ public class FreezerScript : IHoldfastSharedMethods {
                     f1MenuInputField.onEndEdit.Invoke(rcFreezeRunCommand);
                     var rcFreezeWalkCommand = string.Format("set characterWalkSpeed 0");
                     f1MenuInputField.onEndEdit.Invoke(rcFreezeWalkCommand);
+                    var rcGodCommand = string.Format("set characterGodMode 1");
+                    f1MenuInputField.onEndEdit.Invoke(rcGodCommand);
                 }
             } else if (message.Equals("!unfreeze")) {
                 if (f1MenuInputField != null) {
@@ -47,9 +49,14 @@ public class FreezerScript : IHoldfastSharedMethods {
                     f1MenuInputField.onEndEdit.Invoke(rcRunCommand);
                     var rcWalkCommand = string.Format("set characterWalkSpeed 1");
                     f1MenuInputField.onEndEdit.Invoke(rcWalkCommand);
+                    var rcUnGodCommand = string.Format("set characterGodMode 0");
+                    f1MenuInputField.onEndEdit.Invoke(rcUnGodCommand);
                 }
             }
         }
+    }
+
+    public void PassConfigVariables(string[] value) {
     }
 
     public void OnSyncValueState(int value) {
@@ -128,9 +135,6 @@ public class FreezerScript : IHoldfastSharedMethods {
     }
 
     public void OnInteractableObjectInteraction(int playerId, int interactableObjectId, GameObject interactableObject, InteractionActivationType interactionActivationType, int nextActivationStateTransitionIndex) {
-    }
-
-    public void PassConfigVariables(string[] value) {
     }
 
     public void OnEmplacementPlaced(int itemId, GameObject objectBuilt, EmplacementType emplacementType) {
