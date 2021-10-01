@@ -2997,6 +2997,7 @@ firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternB
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
  
 #Loaded Modifications
+load_mod_server_only 2585708441 # Freeze!
 load_mod 2590035962 # de_survivor (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
 
