@@ -26,6 +26,7 @@ mods_installed 2473910400 # cs_havana (1.6)
 mods_installed 2479088774 # de_inferno (1.6)
 mods_installed 2482488478 # cs_italy (1.6)
 mods_installed 2485403695 # cs_militia (1.6)
+mods_installed 2620570960 # de_mirage (1.6)
 mods_installed 2492047106 # de_nuke (1.6)
 mods_installed 2497055633 # cs_office (1.6)
 mods_installed 2505626269 # de_piranesi (1.6)
@@ -597,7 +598,43 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#15 - de_nuke (1.6) (Army Battlefield) - Calm | Morning (11)
+#15 - de_mirage (1.6) (Army Battlefield) - Calm | Morning (15)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+time_hour 15
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+
+# Loaded Modifications
+load_mod 2620570960 # de_mirage (1.6)
+load_mod 2525192332 # CS 1.6 Sound Pack
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#16 - de_nuke (1.6) (Army Battlefield) - Calm | Morning (11)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -637,7 +674,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#16 - cs_office (1.6) (Army Battlefield) - Calm | Afternoon (14)
+#17 - cs_office (1.6) (Army Battlefield) - Calm | Afternoon (14)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -677,7 +714,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#17 - de_piranesi (1.6) (Army Battlefield) - Calm | Day (13)
+#18 - de_piranesi (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -717,7 +754,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#18 - de_prodigy (1.6) (Army Battlefield) - Calm | Day (13)
+#19 - de_prodigy (1.6) (Army Battlefield) - Calm | Day (13)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -757,7 +794,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#19 - de_storm (1.6) (Army Battlefield) - Storm | Evening (17)
+#20 - de_storm (1.6) (Army Battlefield) - Storm | Evening (17)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -797,7 +834,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#20 - de_survivor (1.6) (Army Battlefield) - Snowy | Evening (17)
+#21 - de_survivor (1.6) (Army Battlefield) - Snowy | Evening (17)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -833,7 +870,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#21 - de_train (1.6) (Army Battlefield) - Calm | Afternoon (15)
+#22 - de_train (1.6) (Army Battlefield) - Calm | Afternoon (15)
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
