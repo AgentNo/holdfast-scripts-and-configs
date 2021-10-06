@@ -1,7 +1,7 @@
 mods_installed 2492047106 # de_nuke (1.6)
 mods_installed 2525192332 # CS 1.6 Sound Pack
 
-#X - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
+#X - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning (11)
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -17,7 +17,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 9
+time_hour 11
 time_dynamic false
 weather_preset calm
 weather_dynamic false
