@@ -2161,7 +2161,7 @@ starting_weapons_override French LightInfantry 1 1 Musket_NewLandLightInfantryPa
 starting_weapons_override Prussian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
 starting_weapons_override Russian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
  
-#PISTOL
+# PISTOL
 firearm_ammo_override British ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override French ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override Prussian ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
@@ -2217,12 +2217,14 @@ firearm_ammo_override French LightInfantry Musket_NewLandLightInfantryPatternBro
 firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
  
-#Loaded Modifications
+# Loaded Modifications
 load_mod 2620570960 # de_mirage (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
- 
+
+# RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
+rc set forceFirstPersonMode true
  
 !map_rotation end
 
