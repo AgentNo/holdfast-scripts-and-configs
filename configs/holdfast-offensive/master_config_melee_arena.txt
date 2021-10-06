@@ -2220,6 +2220,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
 # Loaded Modifications
 load_mod 2620570960 # de_mirage (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
+load_mod_server_only 2585708441 # Freeze!
 
 # RC Commands
 rc set meleeArenaAllowShooting true
