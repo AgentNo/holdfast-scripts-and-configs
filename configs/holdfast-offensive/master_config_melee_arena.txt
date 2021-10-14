@@ -176,7 +176,6 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 
 # RC Commands
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode false
 
 !map_rotation end
 
@@ -313,7 +312,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -450,7 +448,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -587,7 +584,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -724,7 +720,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -861,7 +856,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -998,7 +992,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1135,7 +1128,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1272,7 +1264,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1409,7 +1400,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1546,7 +1536,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1683,7 +1672,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1820,7 +1808,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -1957,7 +1944,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2094,7 +2080,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2225,7 +2210,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2362,7 +2346,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2499,7 +2482,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2636,7 +2618,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2773,7 +2754,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -2910,7 +2890,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -3047,7 +3026,6 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -3178,7 +3156,6 @@ load_mod 2525192332 # CS 1.6 Sound Pack
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
 
@@ -3315,6 +3292,5 @@ load_mod_server_only 2585708441 # Freeze!
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc set forceFirstPersonMode true
  
 !map_rotation end
