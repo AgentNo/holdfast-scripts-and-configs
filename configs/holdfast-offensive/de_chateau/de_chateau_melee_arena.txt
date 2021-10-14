@@ -6,8 +6,8 @@ mods_installed 2525192332 # CS 1.6 Sound Pack
 map_name ModMap
 game_mode MeleeArena
 game_type hardcore
-round_time_minutes 60
-round_spawn_close_timer_seconds 45
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
 round_spawn_close_timer_seconds_between_rounds 20
 amount_of_rounds 10
 faction_balancing false
