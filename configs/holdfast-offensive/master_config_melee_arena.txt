@@ -77,6 +77,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 293.35 41.08 291.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 5 
+dynamic_capture_point_max_capture_player_count 20
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -210,6 +217,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 229.56 30.78 290.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -347,6 +361,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 291.74 45.78 340.07
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -482,6 +503,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 143.89 44.86 139.15 0.00 141.07 0.00
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -619,6 +647,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 274.06 28.18 220.97
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -754,6 +789,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 156.10 32.71 172.33
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -891,6 +933,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 268.11 30.48 209.38
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -1026,6 +1075,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 297.26 31.48 292.27
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -1163,6 +1219,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 288.12 41.08 290.87
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -1298,6 +1361,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 199.54 22.43 254.95
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -1435,6 +1505,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 288.75 58.96 213.30
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -1570,6 +1647,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 281.63 28.98 178.14
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -1707,6 +1791,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 218.92 30.58 265.11
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -1842,6 +1933,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 230.17 29.18 286.85
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -1979,6 +2077,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 202.90 30.98 212.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -2111,8 +2216,14 @@ friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
 
-# WEAPONS 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 189.48 31.08 340.55
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
+# WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override Prussian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2244,6 +2355,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 196.41 41.58 253.68
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -2381,6 +2499,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 178.72 42.88 206.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -2517,8 +2642,15 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 232.80 60.62 216.00
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
-server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>• Assassination mode! CTs have to escape to the top of the oilrig!.<br>
 
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -2652,6 +2784,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 272.99 30.98 293.26
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
@@ -2789,6 +2928,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 239.85 101.38 290.34
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -2925,6 +3071,13 @@ population_low_playable true
 population_medium_playable true
 population_high_playable true
 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 171.91 36.81 240.26 
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
@@ -3057,8 +3210,14 @@ friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
 
-# WEAPONS 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 219.33 42.08 262.78
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
+# WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override Prussian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -3190,6 +3349,13 @@ population_verylow_playable true
 population_low_playable true
 population_medium_playable true
 population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 160.24 45.98 309.85
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
