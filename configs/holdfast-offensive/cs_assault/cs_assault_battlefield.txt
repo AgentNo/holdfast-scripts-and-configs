@@ -33,5 +33,7 @@ load_mod 2450848347 # cs_assault (1.6)
 load_mod 2525192332 # CS 1.6 Sound Pack
 
 rc set characterWeaponDamageScale 0.75
+rc nature weather fog enabled true
+rc nature weather fog visibility 1500
 
 !map_rotation end

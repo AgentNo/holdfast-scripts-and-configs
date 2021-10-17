@@ -32,5 +32,7 @@ damage_split 0
 load_mod 2473910400 # cs_havana (1.6)
 
 rc set characterWeaponDamageScale 0.75
+rc nature weather fog enabled true
+rc nature weather fog visibility 900
 
 !map_rotation end
