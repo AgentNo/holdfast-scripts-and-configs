@@ -49,7 +49,7 @@ mods_installed_server_only 2585708441 # Freeze!
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
-round_time_minutes -1
+round_time_minutes 60
 reinforcements_per_faction 99999
 wave_spawn_time_seconds 3
 wave_spawn_vehicle_time_seconds 3
@@ -80,7 +80,7 @@ population_high_playable true
 # VICTORY FLAG
 dynamic_capture_point_enabled true
 dynamic_capture_point_position 293.35 41.08 291.03
-dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_auto_active_time 0
 dynamic_capture_point_capture_duration 5 
 dynamic_capture_point_max_capture_player_count 20
 
@@ -510,7 +510,7 @@ population_high_playable true
 
 # VICTORY FLAG
 dynamic_capture_point_enabled true
-dynamic_capture_point_position 143.89 44.86 139.15 0.00 141.07 0.00
+dynamic_capture_point_position 143.89 44.86 139.15
 dynamic_capture_point_auto_active_time 0 
 dynamic_capture_point_capture_duration 50 
 dynamic_capture_point_max_capture_player_count 10
