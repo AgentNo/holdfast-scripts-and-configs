@@ -1,5 +1,4 @@
 mods_installed 2469751266 # cs_estate (1.6)
-mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
 !map_rotation start
@@ -121,7 +120,6 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 #Loaded Modifications
 load_mod 2469751266 # cs_estate (1.6)
-load_mod 2525192332 # CS 1.6 Sound Pack
  
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75

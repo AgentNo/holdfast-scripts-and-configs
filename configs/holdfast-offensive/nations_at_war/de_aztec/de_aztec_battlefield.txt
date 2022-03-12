@@ -1,5 +1,4 @@
 mods_installed 2453190571 # de_aztec (1.6)
-mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - de_aztec (1.6) (Army Battlefield) - Storm | Evening (17)
 !map_rotation start
@@ -30,7 +29,6 @@ damage_split 0
 
 # Loaded Modifications
 load_mod 2453190571 # de_aztec (1.6)
-load_mod 2525192332 # CS 1.6 Sound Pack
 
 rc set characterWeaponDamageScale 0.75
 rc nature weather fog enabled true

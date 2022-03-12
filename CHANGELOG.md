@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 12th March 2022
+- Removed `CS 1.6 Sound Pack` and `Freeze!` mods
+
 # 19th February 2022
 - Created Changelog. We'll pretend that this repo never existed before this point ;)
 - Removed cannon racing and cannon capture placeholders until further notice 
