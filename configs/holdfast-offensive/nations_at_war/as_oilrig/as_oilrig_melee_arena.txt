@@ -1,6 +1,6 @@
 mods_installed 2502884874 # as_oilrig (1.6)
 
-#X - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
+#X - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -16,19 +16,29 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17.5
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 232.80 60.62 216.00
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>• Assassination mode! CTs have to escape to the top of the oilrig!.<br>
 
 # WEAPONS 
-
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override Prussian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -62,7 +72,7 @@ starting_weapons_override French LightInfantry 1 1 Musket_NewLandLightInfantryPa
 starting_weapons_override Prussian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
 starting_weapons_override Russian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
  
-#PISTOL
+# PISTOL
 firearm_ammo_override British ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override French ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override Prussian ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
@@ -118,9 +128,10 @@ firearm_ammo_override French LightInfantry Musket_NewLandLightInfantryPatternBro
 firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
  
-#Loaded Modifications
+# Loaded Modifications
 load_mod 2502884874 # as_oilrig (1.6)
- 
+
+# RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  

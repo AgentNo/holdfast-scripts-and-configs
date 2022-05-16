@@ -1,6 +1,6 @@
 mods_installed 2590035962 # de_survivor (1.6)
 
-#X - de_survivor (1.6) (Hardcore Melee Arena) - Snowy | Evening (17)
+#X - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -16,10 +16,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17
-time_dynamic false
-weather_preset snowy
-weather_dynamic false
+nature_preset Snow_Snowstorm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -27,8 +24,14 @@ friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
 
-# WEAPONS 
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 219.33 42.08 262.78
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
 
+# WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override Prussian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
@@ -62,7 +65,7 @@ starting_weapons_override French LightInfantry 1 1 Musket_NewLandLightInfantryPa
 starting_weapons_override Prussian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
 starting_weapons_override Russian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
  
-#PISTOL
+# PISTOL
 firearm_ammo_override British ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override French ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
 firearm_ammo_override Prussian ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
@@ -118,9 +121,10 @@ firearm_ammo_override French LightInfantry Musket_NewLandLightInfantryPatternBro
 firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
  
-#Loaded Modifications
+# Loaded Modifications
 load_mod 2590035962 # de_survivor (1.6)
 
+# RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  

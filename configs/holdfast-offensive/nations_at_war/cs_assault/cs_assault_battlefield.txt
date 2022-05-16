@@ -1,6 +1,6 @@
 mods_installed 2450848347 # cs_assault (1.6)
 
-#X - cs_assault (1.6) (Army Battlefield) - Calm | Night (20)
+#X - cs_assault (1.6) (Army Battlefield) - Calm | Night
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -17,21 +17,20 @@ allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 20
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
 friendly_fire false
 friendly_fire_melee_bounce false
 damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # Loaded Modifications
 load_mod 2450848347 # cs_assault (1.6)
 
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 1500
 
 !map_rotation end

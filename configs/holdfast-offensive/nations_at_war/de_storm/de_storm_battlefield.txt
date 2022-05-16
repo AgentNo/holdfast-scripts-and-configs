@@ -1,6 +1,6 @@
 mods_installed 2521544540 # de_storm (1.6)
 
-#X - de_storm (1.6) (Army Battlefield) - Storm | Evening (17)
+#X - de_storm (1.6) (Army Battlefield) - Storm | Day
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -17,15 +17,16 @@ allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17
-time_dynamic false
-weather_preset storm
-weather_dynamic false
+nature_preset Forest_Storm
 faction_attacking british
 faction_defending french
 friendly_fire false
 friendly_fire_melee_bounce false
 damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # Loaded Modifications
 load_mod 2521544540 # de_storm (1.6)

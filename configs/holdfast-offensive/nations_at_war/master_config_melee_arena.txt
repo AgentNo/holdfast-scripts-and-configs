@@ -41,10 +41,12 @@ mods_installed 2523430502 # de_train (1.6)
 mods_installed 2544107036 # de_dust (1.6) - Battlefield Only
 # - SOUNDS AND SCRIPTS
 # NONE
+# - OTHER
+# NONE
 
 ###- Map Rotations
 
-#1 = de_dust (1.6) (Battlefield) - Calm | Morning (9) - STAGING
+#1 = de_dust (1.6) (Battlefield) - Sandstorm | Day - STAGING
 !map_rotation start
 map_name ModMap
 game_mode ArmyBattlefield
@@ -61,10 +63,7 @@ allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 15
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Sandstorm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -181,12 +180,11 @@ load_mod 2544107036 # de_dust (1.6) - Battlefield Only
 
 # RC Commands
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
 
 !map_rotation end
 
 
-#2 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+#2 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -202,10 +200,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 20
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -323,13 +318,11 @@ load_mod 2442020077 # cs_747 (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 1000
  
 !map_rotation end
 
 
-#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -345,10 +338,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Forest_Clear_Dawn
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -466,12 +456,11 @@ load_mod 2446867040 # de_airstrip (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#4 - cs_assault (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+#4 - cs_assault (1.6) (Hardcore Melee Arena) - Calm | Night
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -487,10 +476,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 20
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -608,13 +594,11 @@ load_mod 2450848347 # cs_assault (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 1500
  
 !map_rotation end
 
 
-#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening (17)
+#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -630,10 +614,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17
-time_dynamic false
-weather_preset storm
-weather_dynamic false
+nature_preset Forest_Storm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -751,13 +732,11 @@ load_mod 2453190571 # de_aztec (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 1500
  
 !map_rotation end
 
 
-#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night (22)
+#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -773,10 +752,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 22
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -894,13 +870,11 @@ load_mod 2455363876 # cs_backalley (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 900
  
 !map_rotation end
 
 
-#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day (14)
+#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -916,10 +890,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 14
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Forest_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -1037,12 +1008,11 @@ load_mod 2458269436 # de_chateau (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 7.5)
+#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1058,10 +1028,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 7.5
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Forest_Clear_Dawn
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -1179,12 +1146,11 @@ load_mod 2460225321 # de_cbble (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#9 - de_dust (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#9 - de_dust (1.6) (Hardcore Melee Arena) - Sandstorm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1200,10 +1166,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Sandstorm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -1321,12 +1284,11 @@ load_mod 2461540045 # de_dust (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1342,10 +1304,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -1463,12 +1422,11 @@ load_mod 2465910424 # de_dust2 (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
+#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1484,10 +1442,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17.5
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Dawn
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -1605,13 +1560,11 @@ load_mod 2469751266 # cs_estate (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 900
  
 !map_rotation end
 
 
-#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night (20)
+#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1627,10 +1580,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 20
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -1748,13 +1698,11 @@ load_mod 2473910400 # cs_havana (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled true
-rc nature weather fog visibility 900
  
 !map_rotation end
 
 
-#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Morning (9)
+#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1770,10 +1718,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 9
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -1891,12 +1836,11 @@ load_mod 2479088774 # de_inferno (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#14 - cs_italy (1.6) (Hardcore Melee Arena) - Calm | Afternoon (15)
+#14 - cs_italy (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1912,10 +1856,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 15
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Day
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -2033,12 +1974,11 @@ load_mod 2482488478 # cs_italy (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#15 - cs_militia (1.6) (Hardcore Melee Arena) - Calm | Morning (8.5)
+#15 - cs_militia (1.6) (Hardcore Melee Arena) - Sandstorm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2054,10 +1994,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 8.5
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Sandstorm
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -2175,12 +2112,11 @@ load_mod 2485403695 # cs_militia (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#16 - de_mirage (1.6) (Hardcore Melee Arena) - Calm | Morning (15)
+#16 - de_mirage (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2196,10 +2132,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 15
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -2310,12 +2243,11 @@ load_mod 2620570960 # de_mirage (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#17 - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning (11)
+#17 - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2331,10 +2263,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 11
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Dawn
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -2452,12 +2381,11 @@ load_mod 2492047106 # de_nuke (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#18 - cs_office (1.6) (Hardcore Melee Arena) - Calm | Afternoon (14)
+#18 - cs_office (1.6) (Hardcore Melee Arena) - Snowing | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2473,10 +2401,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 14
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Snow_Snowing_Day
 faction_attacking french
 faction_defending british
 friendly_fire true
@@ -2594,12 +2519,11 @@ load_mod 2497055633 # cs_office (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#19 - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Evening (17.5)
+#19 - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2615,10 +2539,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17.5
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -2736,12 +2657,11 @@ load_mod 2502884874 # as_oilrig (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#20 - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#20 - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2757,10 +2677,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Forest_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -2878,12 +2795,11 @@ load_mod 2505626269 # de_piranesi (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#21 - de_prodigy (1.6) (Hardcore Melee Arena) - Calm | Day (13)
+#21 - de_prodigy (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2899,10 +2815,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 13
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Ocean_Clear_Dawn
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -3020,12 +2933,11 @@ load_mod 2512247630 # de_prodigy (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#22 - de_storm (1.6) (Hardcore Melee Arena) - Storm | Evening (17)
+#22 - de_storm (1.6) (Hardcore Melee Arena) - Storm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -3041,10 +2953,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17
-time_dynamic false
-weather_preset storm
-weather_dynamic false
+nature_preset Forest_Storm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -3162,12 +3071,11 @@ load_mod 2521544540 # de_storm (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#23 - de_survivor (1.6) (Hardcore Melee Arena) - Snowy | Evening (17)
+#23 - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -3183,10 +3091,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 17
-time_dynamic false
-weather_preset snowy
-weather_dynamic false
+nature_preset Snow_Snowstorm
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -3292,17 +3197,16 @@ firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternB
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
  
 # Loaded Modifications
-load_mod_server_only 2585708441 # Freeze!
+load_mod 2590035962 # de_survivor (1.6)
 
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
 
 
-#24 - de_train (1.6) (Hardcore Melee Arena) - Calm | Afternoon (15)
+#24 - de_train (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -3318,10 +3222,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-time_hour 15
-time_dynamic false
-weather_preset calm
-weather_dynamic false
+nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
 friendly_fire true
@@ -3439,6 +3340,5 @@ load_mod 2523430502 # de_train (1.6)
 # RC Commands
 rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
-rc nature weather fog enabled false
  
 !map_rotation end
