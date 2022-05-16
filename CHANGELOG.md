@@ -5,6 +5,7 @@
 - Fixed an issue where the map load directive was accidentally removed from `de_survivor (1.6)`
 - Removed deprecation notice on `README.md`
 - Fixed multiple discrepencies between master and individual configs, especially with Army Battlefield configs
+- Re-added placeholder in `configs/holdfast-offensive/frontlines` directory
 
 # 12th March 2022
 - Removed `CS 1.6 Sound Pack` and `Freeze!` mods temporarily
