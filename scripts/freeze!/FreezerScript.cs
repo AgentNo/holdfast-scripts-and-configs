@@ -1,14 +1,20 @@
 ﻿// Freeze!
 // Freeze all players in position until unfrozen by an admin.
-// Commands are placed in the admin chat (red), and they are not recognised in any other chat.
+// Commands are placed in any chat, but can only be used by the authorised users passed in the config as a comma-delimited set of values.
+// This is the steamID of each player (SteamId64), which is mapped to user id when the user joins the round
+// Obviously, for security reasons, DO NOT put SteamIds into the git repo!
 
 using HoldfastSharedMethods;
 using System.Collections.Generic;
+using System.Linq;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FreezerScript : IHoldfastSharedMethods {
     private InputField f1MenuInputField;
+    private Dictionary<int, ulong> authorisedUsers = new Dictionary<int, ulong>(); //Maps playerId and steamId for authorised users
+    private List<string> authUsersSteamIds = new List<string>();
 
     public void OnIsServer(bool server) {
         //Get all the canvas items in the game
@@ -19,9 +25,9 @@ public class FreezerScript : IHoldfastSharedMethods {
                 //Inside this, now we need to find the input field where the player types messages.
                 f1MenuInputField = canvases[i].GetComponentInChildren<InputField>(true);
                 if (f1MenuInputField != null) {
-                    Debug.Log("Found the Game Console Panel");
+                    Debug.Log("Freeze!: Found the Game Console Panel");
                 } else {
-                    Debug.Log("Game Console Panel not found");
+                    Debug.Log("Freeze!: Game Console Panel not found. This mod may not work correctly!");
                 }
                 break;
             }
@@ -29,34 +35,59 @@ public class FreezerScript : IHoldfastSharedMethods {
     }
 
     public void OnTextMessage(int playerId, TextChatChannel channel, string text) {
-        string textChannel = string.Format("{0}", channel);
-        if (textChannel.Equals("Admin")) {
-            string message = text.ToLower();
+        string message = text.ToLower();
+        if (authorisedUsers.ContainsKey(playerId)) {
             if (message.Equals("!freeze")) {
                 if (f1MenuInputField != null) {
-                    // Freeze players in place
-                    var rcFreezeRunCommand = string.Format("set characterRunSpeed 0");
-                    f1MenuInputField.onEndEdit.Invoke(rcFreezeRunCommand);
-                    var rcFreezeWalkCommand = string.Format("set characterWalkSpeed 0");
-                    f1MenuInputField.onEndEdit.Invoke(rcFreezeWalkCommand);
-                    var rcGodCommand = string.Format("set characterGodMode 1");
-                    f1MenuInputField.onEndEdit.Invoke(rcGodCommand);
+                    // Freeze players in place and grant god mode
+                    f1MenuInputField.onEndEdit.Invoke("set characterRunSpeed 0");
+                    f1MenuInputField.onEndEdit.Invoke("set characterWalkSpeed 0");
+                    f1MenuInputField.onEndEdit.Invoke("set characterGodMode 1");
                 }
             } else if (message.Equals("!unfreeze")) {
                 if (f1MenuInputField != null) {
-                    // Unfreeze players
-                    var rcRunCommand = string.Format("set characterRunSpeed 1");
-                    f1MenuInputField.onEndEdit.Invoke(rcRunCommand);
-                    var rcWalkCommand = string.Format("set characterWalkSpeed 1");
-                    f1MenuInputField.onEndEdit.Invoke(rcWalkCommand);
-                    var rcUnGodCommand = string.Format("set characterGodMode 0");
-                    f1MenuInputField.onEndEdit.Invoke(rcUnGodCommand);
+                    // Unfreeze players and return to normal hp
+                    f1MenuInputField.onEndEdit.Invoke("set characterRunSpeed 1");
+                    f1MenuInputField.onEndEdit.Invoke("set characterWalkSpeed 1");
+                    f1MenuInputField.onEndEdit.Invoke("set characterGodMode 0");
                 }
             }
         }
     }
 
     public void PassConfigVariables(string[] value) {
+        Debug.Log("Freeze!: Fetching steam ID values from config...");
+        for (int i = 0; i < value.Length; i++) {
+            var splitData = value[i].Split(':');
+            if (splitData.Length != 3) {
+                continue;
+            }
+
+            if (splitData[0] == "freeze") {
+                if (splitData[1] == "authorised_users") {
+                    // In this case, our value is a list of steamIds for authorised users
+                    Debug.Log("Freeze!: Found steam IDs in config, added to whitelist");
+                    authUsersSteamIds = splitData[2].Split(',').ToList();
+                }
+            }
+        }
+        Debug.Log("Freeze!: Mod loaded with custom parameters successfully!");
+    }
+
+    public void OnPlayerJoined(int playerId, ulong steamId, string playerName, string regimentTag, bool isBot) {
+        // If the user's steam ID is part of the freeze_authorised_users argument, create a mapping in the dictionary to allow for commands to be issued
+        if (authUsersSteamIds.Contains(Convert.ToString(steamId)) && !isBot) {
+            Debug.Log("Freeze!: Authorised user " + playerId + " added to whitelist (joined server)");
+            authorisedUsers.Add(playerId, steamId);
+        }
+    }
+
+    public void OnPlayerLeft(int playerId) {
+        // If the user is in the autorised list, remove them
+        if (authorisedUsers.ContainsKey(playerId)) {
+            Debug.Log("Freeze!: Authorised user " + playerId + " removed from whitelist (left server)");
+            authorisedUsers.Remove(playerId);
+        }
     }
 
     public void OnSyncValueState(int value) {
@@ -84,12 +115,6 @@ public class FreezerScript : IHoldfastSharedMethods {
     }
 
     public void OnPlayerShoot(int playerId, bool dryShot) {
-    }
-
-    public void OnPlayerJoined(int playerId, ulong steamId, string playerName, string regimentTag, bool isBot) {
-    }
-
-    public void OnPlayerLeft(int playerId) {
     }
 
     public void OnPlayerSpawned(int playerId, int spawnSectionId, FactionCountry playerFaction, PlayerClass playerClass, int uniformId, GameObject playerObject) {
@@ -177,5 +202,17 @@ public class FreezerScript : IHoldfastSharedMethods {
     }
 
     public void OnRCLogin(int playerId, string inputPassword, bool isLoggedIn) {
+    }
+
+    public void OnPlayerPacket(int playerId, byte? instance, Vector3? ownerPosition, double? packetTimestamp, Vector2? ownerInputAxis, float? ownerRotationY, float? ownerPitch, float? ownerYaw, PlayerActions[] actionCollection, Vector3? cameraPosition, Vector3? cameraForward, ushort? shipID, bool swimming) {
+    }
+
+    public void OnVehiclePacket(int vehicleId, Vector2 inputAxis, bool shift, bool strafe, PlayerVehicleActions[] actionCollection) {
+    }
+
+    public void OnOfficerOrderStart(int officerPlayerId, OfficerOrderType officerOrderType, Vector3 orderPosition, float orderRotationY, int voicePhraseRandomIndex) {
+    }
+
+    public void OnOfficerOrderStop(int officerPlayerId, OfficerOrderType officerOrderType) {
     }
 }

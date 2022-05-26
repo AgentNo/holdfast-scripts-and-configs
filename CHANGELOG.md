@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 26th May 2022
+- Updated interface template to `IHoldfastSharedMethods2` API
+- Updated implementation of Freeze! script
+- Re-added new Freeze! script to config
+
 # 17th May 2022
 - Completly replaced the other weather config commands with the new Frontlines weather presets
 - Fixed an issue where the map load directive was accidentally removed from `de_survivor (1.6)`
