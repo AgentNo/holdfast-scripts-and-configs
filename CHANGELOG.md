@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 27th May 2022
+- Updated implementation of No OwO/UwU Allowed!
+- Added No OwO/UwU Allowed! to master config
+
 # 26th May 2022
 - Updated interface template to `IHoldfastSharedMethods2` API
 - Updated implementation of Freeze! script
