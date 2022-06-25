@@ -13,7 +13,7 @@ map_voting_allow_same_map false
 map_voting_history_count 3
 map_voting_gameplay_modes MeleeArena
 
-# INSTALLED MODIFCATIONS
+# INSTALLED MODIFICATIONS
 # - MAPS
 mods_installed 2442020077 # cs_747 (1.6)
 mods_installed 2446867040 # de_airstrip (1.6)
