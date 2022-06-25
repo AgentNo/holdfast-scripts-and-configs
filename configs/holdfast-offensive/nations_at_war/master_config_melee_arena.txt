@@ -42,7 +42,6 @@ mods_installed 2512247630 # de_prodigy (1.6)
 mods_installed 2521544540 # de_storm (1.6)
 mods_installed 2590035962 # de_survivor (1.6)
 mods_installed 2523430502 # de_train (1.6)
-mods_installed 2544107036 # de_dust (1.6) - Battlefield Only
 # - SOUNDS AND SCRIPTS
 mods_installed_server_only 2809830396 # Freeze!
 mods_installed_server_only 2813465436 # No OwO/UwU Allowed!
@@ -181,7 +180,7 @@ firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternB
 firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
 
 # Loaded Modifications
-load_mod 2544107036 # de_dust (1.6) - Battlefield Only
+load_mod 2461540045 # de_dust (1.6)
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 mod_variable freeze:authorised_users:76561198046293342,END
