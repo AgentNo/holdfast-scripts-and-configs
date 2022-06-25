@@ -5,6 +5,10 @@
 # does not restart, any subsequent RA rotation in this config will work.
 #----------------------------------------------------------------------------------------#
 
+###- Server Intro Message
+server_intro_title Rush B Drop AWP!
+server_intro_body Greetings ladies and gentlemen. Welcome to the <b>87th's Counter-Strike: Holdfast Offensive!</b><br><br>Come join us on our Discord. We look forward to seeing you there. <br><br><b><color=yellow>discord.gg/87th</color></b>
+
 ###- Global Gameplay & Map Settings
 map_rotation_start_randomise false
 map_voting_enabled true
@@ -63,7 +67,7 @@ allow_midround_spawning true
 allow_faction_switching true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Sandstorm
 faction_attacking british
 faction_defending french
@@ -203,7 +207,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
@@ -344,7 +348,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Clear_Dawn
 faction_attacking british
 faction_defending french
@@ -485,7 +489,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
@@ -626,7 +630,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Storm
 faction_attacking british
 faction_defending french
@@ -767,7 +771,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
@@ -908,7 +912,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Clear_Day
 faction_attacking british
 faction_defending french
@@ -1049,7 +1053,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Clear_Dawn
 faction_attacking british
 faction_defending french
@@ -1190,7 +1194,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Sandstorm
 faction_attacking british
 faction_defending french
@@ -1331,7 +1335,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
@@ -1472,7 +1476,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Dawn
 faction_attacking french
 faction_defending british
@@ -1613,7 +1617,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Dark_Night
 faction_attacking french
 faction_defending british
@@ -1754,7 +1758,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
@@ -1895,7 +1899,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Day
 faction_attacking french
 faction_defending british
@@ -2036,7 +2040,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Sandstorm
 faction_attacking french
 faction_defending british
@@ -2177,7 +2181,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
@@ -2311,7 +2315,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Dawn
 faction_attacking british
 faction_defending french
@@ -2452,7 +2456,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Snow_Snowing_Day
 faction_attacking french
 faction_defending british
@@ -2593,7 +2597,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Clear_Day
 faction_attacking british
 faction_defending french
@@ -2734,7 +2738,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Clear_Day
 faction_attacking british
 faction_defending french
@@ -2875,7 +2879,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Ocean_Clear_Dawn
 faction_attacking british
 faction_defending french
@@ -3016,7 +3020,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Forest_Storm
 faction_attacking british
 faction_defending french
@@ -3157,7 +3161,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Snow_Snowstorm
 faction_attacking british
 faction_defending french
@@ -3291,7 +3295,7 @@ allow_faction_switching true
 allow_midround_spawning true
 allow_spectating true
 minimum_players -1
-maximum_players 40
+maximum_players 50
 nature_preset Sand_Clear_Day
 faction_attacking british
 faction_defending french
