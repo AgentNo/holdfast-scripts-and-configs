@@ -1,0 +1,838 @@
+# The master config holds the battlefield rotations for ALL the CS1.6 maps.
+# If you are using this for your server, please ensure you update the number of players!
+#----------------------------------------------------------------------------------------#
+
+###- Server Intro Message
+server_intro_title Rush B Drop AWP!
+server_intro_body Greetings ladies and gentlemen. Welcome to the <b>87th's Counter-Strike: Holdfast Offensive!</b><br><br>Come join us on our Discord. We look forward to seeing you there. <br><br><b><color=yellow>discord.gg/87th</color></b>
+
+###- Global Gameplay and Map Settings
+map_rotation_start_randomise true
+map_voting_enabled true
+map_voting_duration 20
+map_voting_allow_same_map false
+map_voting_history_count 3
+map_voting_gameplay_modes ArmyBattlefield
+frontlines_mode true
+
+# INSTALLED MODIFICATIONS
+# - MAPS
+mods_installed 2442020077 # cs_747 (1.6)
+mods_installed 2446867040 # de_airstrip (1.6)
+mods_installed 2450848347 # cs_assault (1.6)
+mods_installed 2453190571 # de_aztec (1.6)
+mods_installed 2455363876 # cs_backalley (1.6)
+mods_installed 2458269436 # de_chateau (1.6)
+mods_installed 2460225321 # de_cbble (1.6)
+mods_installed 2461540045 # de_dust (1.6)
+mods_installed 2465910424 # de_dust2 (1.6)
+mods_installed 2469751266 # cs_estate (1.6)
+mods_installed 2473910400 # cs_havana (1.6)
+mods_installed 2479088774 # de_inferno (1.6)
+mods_installed 2482488478 # cs_italy (1.6)
+mods_installed 2485403695 # cs_militia (1.6)
+mods_installed 2620570960 # de_mirage (1.6)
+mods_installed 2492047106 # de_nuke (1.6)
+mods_installed 2497055633 # cs_office (1.6)
+mods_installed 2505626269 # de_piranesi (1.6)
+mods_installed 2512247630 # de_prodigy (1.6)
+mods_installed 2521544540 # de_storm (1.6)
+mods_installed 2590035962 # de_survivor (1.6)
+mods_installed 2523430502 # de_train (1.6)
+# - SOUNDS AND SCRIPTS
+# NONE
+# - OTHER
+# NONE
+
+###- Map Rotations
+
+#1 - cs_747 (1.6) (Army Battlefield) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2442020077 # cs_747 (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#2 - de_airstrip (1.6) (Army Battlefield) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Dawn
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2446867040 # de_airstrip (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#3 - cs_assault (1.6) (Army Battlefield) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2450848347 # cs_assault (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#4 - de_aztec (1.6) (Army Battlefield) - Storm | Evening 
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Storm
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2453190571 # de_aztec (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#5 - cs_backalley (1.6) (Army Battlefield) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2455363876 # cs_backalley (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#6 - de_chateau (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2458269436 # de_chateau (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#7 - de_cbble (1.6) (Army Battlefield) - Calm | Morning 
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Dawn
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2460225321 # de_cbble (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#8 - de_dust (1.6) (Army Battlefield) - Sandstorm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2461540045 # de_dust (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#9 - de_dust2 (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2465910424 # de_dust2 (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#10 - cs_estate (1.6) (Army Battlefield) - Calm | Evening
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Dawn
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2469751266 # cs_estate (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#11 - cs_havana (1.6) (Army Battlefield) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2473910400 # cs_havana (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#12 - de_inferno (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2479088774 # de_inferno (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#13 - cs_italy (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2482488478 # cs_italy (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#14 - cs_militia (1.6) (Army Battlefield) - Sandstorm | Morning 
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2485403695 # cs_militia (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#15 - de_mirage (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2620570960 # de_mirage (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#16 - de_nuke (1.6) (Army Battlefield) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Dawn
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2492047106 # de_nuke (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#17 - cs_office (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Snow_Snowing_Day
+faction_attacking central
+faction_defending allied
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2497055633 # cs_office (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#18 - de_piranesi (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2505626269 # de_piranesi (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#19 - de_prodigy (1.6) (Army Battlefield) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Clear_Dawn
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2512247630 # de_prodigy (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#20 - de_storm (1.6) (Army Battlefield) - Storm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Storm
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2521544540 # de_storm (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#21 - de_survivor (1.6) (Army Battlefield) - Snowstorm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Snow_Snowstorm
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2590035962 # de_survivor (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#22 - de_train (1.6) (Army Battlefield) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 20
+reinforcements_per_faction 545
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing true
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking allied
+faction_defending central
+friendly_fire false
+friendly_fire_melee_bounce false
+damage_split 0
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# Loaded Modifications
+load_mod 2523430502 # cs_train (1.6)
+
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
