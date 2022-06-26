@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 25th June 2022
+- Upped max slots of all CSHO maps to 50
+- Fixed a typo in the master configs
+- Added server welcome messages to master configs (NaW) 
+
 # 27th May 2022
 - Updated implementation of No OwO/UwU Allowed!
 - Added No OwO/UwU Allowed! to master config
