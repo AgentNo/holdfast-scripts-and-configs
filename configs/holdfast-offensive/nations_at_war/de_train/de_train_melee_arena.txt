@@ -1,5 +1,4 @@
 mods_installed 2523430502 # de_train (1.6)
-mods_installed 2525192332 # CS 1.6 Sound Pack
 
 #X - de_train (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start

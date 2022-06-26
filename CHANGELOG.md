@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 26th June 2022
+- Removed `CS 1.6 Sound Pack` from de_train (1.6) config
+
 # 25th June 2022
 - Upped max slots of all CSHO maps to 50
 - Fixed a typo in the master configs
