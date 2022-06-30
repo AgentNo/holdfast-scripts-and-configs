@@ -1,4 +1,5 @@
 mods_installed 2590035962 # de_survivor (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
 !map_rotation start
@@ -123,6 +124,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 # Loaded Modifications
 load_mod 2590035962 # de_survivor (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 # RC Commands
 rc set meleeArenaAllowShooting true

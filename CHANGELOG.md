@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 30th June 2022
+- Added `CS 1.6 Sound Pack (NaW)` to the Nations At War CSHO maps
+
 # 26th June 2022
 - Removed `CS 1.6 Sound Pack` from de_train (1.6) config
 - Added Fronlines AB configs for CSHO maps

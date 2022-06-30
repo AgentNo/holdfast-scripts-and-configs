@@ -1,4 +1,5 @@
 mods_installed 2458269436 # de_chateau (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - de_chateau (1.6) (Army Battlefield) - Calm | Day
 !map_rotation start
@@ -30,6 +31,7 @@ population_high_playable true
 
 # Loaded Modifications
 load_mod 2458269436 # de_chateau (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 rc set characterWeaponDamageScale 0.75
 

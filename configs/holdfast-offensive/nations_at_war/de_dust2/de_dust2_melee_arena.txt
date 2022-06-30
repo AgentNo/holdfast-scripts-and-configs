@@ -1,4 +1,5 @@
 mods_installed 2465910424 # de_dust2 (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
@@ -130,6 +131,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 # Loaded Modifications
 load_mod 2465910424 # de_dust2 (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 # RC Commands
 rc set meleeArenaAllowShooting true

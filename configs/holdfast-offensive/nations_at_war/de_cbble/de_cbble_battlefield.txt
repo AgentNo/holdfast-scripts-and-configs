@@ -1,4 +1,5 @@
 mods_installed 2460225321 # de_cbble (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - de_cbble (1.6) (Army Battlefield) - Calm | Morning 
 !map_rotation start
@@ -30,6 +31,7 @@ population_high_playable true
 
 # Loaded Modifications
 load_mod 2460225321 # de_cbble (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 rc set characterWeaponDamageScale 0.75
 

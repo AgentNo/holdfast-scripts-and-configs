@@ -1,4 +1,5 @@
 mods_installed 2523430502 # de_train (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - de_train (1.6) (Army Battlefield) - Calm | Day
 !map_rotation start
@@ -29,7 +30,8 @@ population_medium_playable true
 population_high_playable true
 
 # Loaded Modifications
-load_mod 2523430502 # cs_train (1.6)
+load_mod 2523430502 # de_train (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 rc set characterWeaponDamageScale 0.75
 

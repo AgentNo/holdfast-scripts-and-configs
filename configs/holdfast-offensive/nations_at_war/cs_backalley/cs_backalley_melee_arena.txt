@@ -1,4 +1,5 @@
 mods_installed 2455363876 # cs_backalley (1.6)
+mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 
 #X - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night 
 !map_rotation start
@@ -130,6 +131,7 @@ firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBr
  
 # Loaded Modifications
 load_mod 2455363876 # cs_backalley (1.6)
+load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 # RC Commands
 rc set meleeArenaAllowShooting true
