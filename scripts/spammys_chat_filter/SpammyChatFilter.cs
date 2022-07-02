@@ -218,4 +218,16 @@ public class SpammyChatFilter : IHoldfastSharedMethods {
 
     public void OnRCCommand(int playerId, string input, string output, bool success) {
     }
+
+    public void OnPlayerPacket(int playerId, byte? instance, Vector3? ownerPosition, double? packetTimestamp, Vector2? ownerInputAxis, float? ownerRotationY, float? ownerPitch, float? ownerYaw, PlayerActions[] actionCollection, Vector3? cameraPosition, Vector3? cameraForward, ushort? shipID, bool swimming) {
+    }
+
+    public void OnVehiclePacket(int vehicleId, Vector2 inputAxis, bool shift, bool strafe, PlayerVehicleActions[] actionCollection) {
+    }
+
+    public void OnOfficerOrderStart(int officerPlayerId, OfficerOrderType officerOrderType, Vector3 orderPosition, float orderRotationY, int voicePhraseRandomIndex) {
+    }
+
+    public void OnOfficerOrderStop(int officerPlayerId, OfficerOrderType officerOrderType) {
+    }
 }

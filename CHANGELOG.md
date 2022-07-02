@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 2nd July 2022
+- Updated Spammy's Chat Filter with new interface methods
+
 # 30th June 2022
 - Added `CS 1.6 Sound Pack (NaW)` to the Nations At War CSHO maps
 
