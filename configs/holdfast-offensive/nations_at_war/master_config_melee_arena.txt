@@ -3446,7 +3446,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#23 - de_tuscan (1.6) (Hardcore Melee Arena) - Calm | Day 
+#25 - de_tuscan (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
