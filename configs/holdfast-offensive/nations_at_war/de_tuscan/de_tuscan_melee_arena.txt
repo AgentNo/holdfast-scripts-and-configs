@@ -31,7 +31,7 @@ population_high_playable true
 
 # VICTORY FLAG
 dynamic_capture_point_enabled true
-dynamic_capture_point_position 199.54 22.43 254.95
+dynamic_capture_point_position 273.31 26.48 234.07
 dynamic_capture_point_auto_active_time 0 
 dynamic_capture_point_capture_duration 50 
 dynamic_capture_point_max_capture_player_count 10
