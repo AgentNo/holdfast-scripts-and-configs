@@ -17,7 +17,7 @@ allow_midround_spawning true
 allow_spectating true
 minimum_players -1
 maximum_players 50
-nature_preset Snow_Snowing_Day
+nature_preset Ocean_Clear_Day
 faction_attacking french
 faction_defending british
 friendly_fire true
