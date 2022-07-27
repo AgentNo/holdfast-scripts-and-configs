@@ -1,0 +1,2219 @@
+# The master config holds the Melee Arena rotations for all the CS1.6 maps.
+# If you are using this for your server, please ensure you update the number of players!
+# NOTE: For Melee Arena configurations, there is a bug where the weapon overrides will not load correctly
+# when first launching a map. To fix this, simply reload the map through the RA console. As long as the server
+# does not restart, any subsequent RA rotation in this config will work.
+#----------------------------------------------------------------------------------------#
+
+###- Server Intro Message
+server_intro_title Rush B Drop AWP!
+server_intro_body Greetings ladies and gentlemen. Welcome to the <b>87th's Counter-Strike: Holdfast Offensive!</b><br><br>Come join us on our Discord. We look forward to seeing you there. <br><br><b><color=yellow>discord.gg/87th</color></b>
+
+###- Global Gameplay & Map Settings
+map_rotation_start_randomise false
+map_voting_enabled true
+map_voting_duration 20
+map_voting_allow_same_map false
+map_voting_history_count 3
+map_voting_gameplay_modes MeleeArena
+frontlines_mode true
+
+# INSTALLED MODIFICATIONS
+# - MAPS
+mods_installed 2442020077 # cs_747 (1.6)
+mods_installed 2446867040 # de_airstrip (1.6)
+mods_installed 2450848347 # cs_assault (1.6)
+mods_installed 2453190571 # de_aztec (1.6)
+mods_installed 2455363876 # cs_backalley (1.6)
+mods_installed 2458269436 # de_chateau (1.6)
+mods_installed 2460225321 # de_cbble (1.6)
+mods_installed 2461540045 # de_dust (1.6)
+mods_installed 2465910424 # de_dust2 (1.6)
+mods_installed 2469751266 # cs_estate (1.6)
+mods_installed 2473910400 # cs_havana (1.6)
+mods_installed 2479088774 # de_inferno (1.6)
+mods_installed 2482488478 # cs_italy (1.6)
+mods_installed 2485403695 # cs_militia (1.6)
+mods_installed 2620570960 # de_mirage (1.6)
+mods_installed 2492047106 # de_nuke (1.6)
+mods_installed 2497055633 # cs_office (1.6)
+mods_installed 2502884874 # as_oilrig (1.6)
+mods_installed 2505626269 # de_piranesi (1.6)
+mods_installed 2512247630 # de_prodigy (1.6)
+mods_installed 2521544540 # de_storm (1.6)
+mods_installed 2590035962 # de_survivor (1.6)
+mods_installed 2523430502 # de_train (1.6)
+mods_installed 2831027030 # de_tuscan (1.6)
+# - SOUNDS AND SCRIPTS
+mods_installed_server_only 2809830396 # Freeze!
+mods_installed_server_only 2813465436 # No OwO/UwU Allowed!
+# - OTHER
+# NONE
+
+###- Map Rotations
+
+#1 = de_dust (1.6) (Battlefield) - Sandstorm | Day - STAGING
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 60
+reinforcements_per_faction 99999
+wave_spawn_time_seconds 3
+wave_spawn_vehicle_time_seconds 3
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+max_accumulated_faction_points -1
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 293.35 41.08 291.03
+dynamic_capture_point_auto_active_time 0
+dynamic_capture_point_capture_duration 5 
+dynamic_capture_point_max_capture_player_count 20
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+
+# Loaded Modifications
+load_mod 2461540045 # de_dust (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#2 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 20
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 229.56 30.78 290.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2442020077 # cs_747 (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 20
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Dawn
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 291.74 45.78 340.07
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2446867040 # de_airstrip (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#4 - cs_assault (1.6) (Hardcore Melee Arena) - Calm | Night
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 143.89 44.86 139.15
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2450848347 # cs_assault (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Storm
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 274.06 28.18 220.97
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2453190571 # de_aztec (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 156.10 32.71 172.33
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2455363876 # cs_backalley (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 268.11 30.48 209.38
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2458269436 # de_chateau (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Dawn
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 297.26 31.48 292.27
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2460225321 # de_cbble (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#9 - de_dust (1.6) (Hardcore Melee Arena) - Sandstorm | Day 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 288.12 41.08 290.87
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2461540045 # de_dust (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 199.54 22.43 254.95
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2465910424 # de_dust2 (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Dawn
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 288.75 58.96 213.30
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2469751266 # cs_estate (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Dark_Night
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 281.63 28.98 178.14
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2473910400 # cs_havana (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 218.92 30.58 265.11
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2479088774 # de_inferno (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#14 - cs_italy (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 230.17 29.18 286.85
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2482488478 # cs_italy (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#15 - cs_militia (1.6) (Hardcore Melee Arena) - Sandstorm | Morning
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 202.90 30.98 212.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2485403695 # cs_militia (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#16 - de_mirage (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 189.48 31.08 340.55
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2620570960 # de_mirage (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#17 - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Dawn
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 196.41 41.58 253.68
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2492047106 # de_nuke (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#18 - cs_office (1.6) (Hardcore Melee Arena) - Snowing | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Clear_Day
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 178.72 42.88 206.03
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2497055633 # cs_office (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#19 - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 232.80 60.62 216.00
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2502884874 # as_oilrig (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#20 - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 272.99 30.98 293.26
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2505626269 # de_piranesi (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#21 - de_prodigy (1.6) (Hardcore Melee Arena) - Calm | Morning
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Ocean_Clear_Dawn
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 239.85 101.38 290.34
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2512247630 # de_prodigy (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#22 - de_storm (1.6) (Hardcore Melee Arena) - Storm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Forest_Storm
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 171.91 36.81 240.26 
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2521544540 # de_storm (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#23 - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Snow_Snowstorm
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 219.33 42.08 262.78
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2590035962 # de_survivor (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#24 - de_train (1.6) (Hardcore Melee Arena) - Calm | Day
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 160.24 45.98 309.85
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2523430502 # de_train (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end
+
+
+#25 - de_tuscan (1.6) (Hardcore Melee Arena) - Calm | Day 
+!map_rotation start
+map_name ModMap
+game_mode MeleeArena
+game_type hardcore
+round_time_minutes 10
+round_spawn_close_timer_seconds 30
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 10
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_midround_spawning true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Clear_Day
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 273.31 26.48 234.07
+dynamic_capture_point_auto_active_time 0 
+dynamic_capture_point_capture_duration 50 
+dynamic_capture_point_max_capture_player_count 10
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_override Allied ArmyInfantryOfficer 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_No37_MKI
+starting_weapons_override Allied ArmyLineInfantry 2 1 Frontlines_Webley_Revolver_MKIV Frontlines_LeeEnfield_MKIII Frontlines_P1907_Trench_Knife Frontlines_MillsGrenade_MKII
+starting_weapons_override Allied Surgeon 1 1 Frontlines_Webley_Revolver_MKIV Frontlines_P1907_Trench_Knife
+starting_weapons_override Central ArmyInfantryOfficer 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_HandNebelBombe
+starting_weapons_override Central ArmyLineInfantry 2 1 Frontlines_Mauser_C78_Revolver Frontlines_Mauser_Gewehr_98 Frontlines_German_Boker_Knife Frontlines_Stielhandgranate_1916
+starting_weapons_override Central Surgeon 1 1 Frontlines_Mauser_C78_Revolver Frontlines_German_Boker_Knife
+
+# FIREARM AMMO OVERRIDE
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+ 
+# Loaded Modifications
+load_mod 2831027030 # de_tuscan (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+mod_variable freeze:authorised_users:76561198046293342,END
+
+# RC Commands
+rc set meleeArenaAllowShooting true
+rc set characterWeaponDamageScale 0.75
+ 
+!map_rotation end

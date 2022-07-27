@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 27th July 2022
+- Added master Battlefield and Melee Arena configs for CSHO Frontlines
+
 # 2nd July 2022
 - Updated Spammy's Chat Filter with new interface methods
 
