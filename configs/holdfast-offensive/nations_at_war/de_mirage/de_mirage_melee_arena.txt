@@ -32,6 +32,9 @@ dynamic_capture_point_auto_active_time 0
 dynamic_capture_point_capture_duration 50 
 dynamic_capture_point_max_capture_player_count 10
 
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
 # WEAPONS 
 starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
 starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
