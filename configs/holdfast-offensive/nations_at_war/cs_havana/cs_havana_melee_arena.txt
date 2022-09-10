@@ -39,95 +39,200 @@ dynamic_capture_point_max_capture_player_count 10
 # RULES 
 server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Grenadier,Guard,LightInfantry,Rifleman,Surgeon,Carpenter|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
 
-# WEAPONS 
-starting_weapons_override British ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override French ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Prussian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Russian ArmyInfantryOfficer 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1 
-starting_weapons_override British ArmyLineInfantry 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override French ArmyLineInfantry 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Prussian ArmyLineInfantry 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Russian ArmyLineInfantry 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override British Rifleman 2 1 Rifle_Pattern1800Infantry Knife_Variation1
-starting_weapons_override French Rifleman 2 1 Rifle_Pattern1800Infantry Knife_Variation1
-starting_weapons_override Prussian Rifleman 2 1 Rifle_Pattern1800Infantry Sword_Bayonet Knife_Variation1
-starting_weapons_override Russian Rifleman 2 1 Rifle_Pattern1800Infantry Sword_Bayonet Knife_Variation1
-starting_weapons_override British Carpenter 2 1 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2
-starting_weapons_override French Carpenter 2 1 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2
-starting_weapons_override Prussian Carpenter 2 1 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2
-starting_weapons_override Russian Carpenter 2 1 Blunderbuss_Variation2 Pistol_NewLandPattern Axe2H_Variation2
-starting_weapons_override British Guard 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override French Guard 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Prussian Guard 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Russian Guard 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override British Grenadier 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override French Grenadier 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Prussian Grenadier 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override Russian Grenadier 2 1 Pistol_NewLandPattern Musket_IndiaPatternBrownBess Knife_Variation1
-starting_weapons_override British Surgeon 1 1 Pistol_NewLandPattern Knife_Variation1
-starting_weapons_override French Surgeon 1 1 Pistol_NewLandPattern Knife_Variation1
-starting_weapons_override Prussian Surgeon 1 1 Pistol_NewLandPattern Knife_Variation1
-starting_weapons_override Russian Surgeon 1 1 Pistol_NewLandPattern Knife_Variation1
-starting_weapons_override British LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
-starting_weapons_override French LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
-starting_weapons_override Prussian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
-starting_weapons_override Russian LightInfantry 1 1 Musket_NewLandLightInfantryPatternBrownBess Knife_Variation1
- 
-# PISTOL
-firearm_ammo_override British ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
-firearm_ammo_override French ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Prussian ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Russian ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
-firearm_ammo_override British ArmyLineInfantry Pistol_NewLandPattern 15 15 15
-firearm_ammo_override French ArmyLineInfantry Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Prussian ArmyLineInfantry Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Russian ArmyLineInfantry Pistol_NewLandPattern 15 15 15
-firearm_ammo_override British Carpenter Pistol_NewLandPattern 15 15 15
-firearm_ammo_override French Carpenter Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Prussian Carpenter Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Russian Carpenter Pistol_NewLandPattern 15 15 15
-firearm_ammo_override British Guard Pistol_NewLandPattern 15 15 15
-firearm_ammo_override French Guard Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Prussian Guard Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Russian Guard Pistol_NewLandPattern 15 15 15
-firearm_ammo_override British Grenadier Pistol_NewLandPattern 15 15 15
-firearm_ammo_override French Grenadier Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Prussian Grenadier Pistol_NewLandPattern 15 15 15
-firearm_ammo_override Russian Grenadier Pistol_NewLandPattern 15 15 15
-firearm_ammo_override British Surgeon Pistol_NewLandPattern 10 10 10
-firearm_ammo_override French Surgeon Pistol_NewLandPattern 10 10 10
-firearm_ammo_override Prussian Surgeon Pistol_NewLandPattern 10 10 10
-firearm_ammo_override Russian Surgeon Pistol_NewLandPattern 10 10 10
+# WEAPONS OVERRIDE
+starting_weapons_selection_override British ArmyInfantryOfficer 1 1 MusketUnbayonetted,Pistol SwordOfficer,Knife
+starting_weapons_selection_override French ArmyInfantryOfficer 1 1 MusketUnbayonetted,Pistol SwordOfficer,Knife
+starting_weapons_selection_override British ArmyLineInfantry 2 1 Musket,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override French ArmyLineInfantry 2 1 Musket,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override British Rifleman 1 1 Rifle Knife
+starting_weapons_selection_override French Rifleman 1 1 Rifle Knife
+starting_weapons_selection_override British Carpenter 2 1 Blunderbuss Pistol Axe2H,Knife
+starting_weapons_selection_override French Carpenter 2 1 Blunderbuss Pistol Axe2H,Knife   
+starting_weapons_selection_override British Guard 2 1 MusketGuard,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override French Guard 2 1 MusketGuard,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override British Grenadier 2 1 Musket,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override French Grenadier 2 1 Musket,MusketUnbayonetted Pistol Knife
+starting_weapons_selection_override British Surgeon 1 1 Pistol Knife
+starting_weapons_selection_override French Surgeon 1 1 Pistol Knife
+starting_weapons_selection_override British LightInfantry 1 1 Musket,MusketUnbayonetted Knife
+starting_weapons_selection_override French LightInfantry 1 1 Musket,MusketUnbayonetted Knife
 
 # FIREARM AMMO OVERRIDE
+firearm_ammo_override British ArmyInfantryOfficer Musket_SeaServiceBrownBess 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_CharlevilleMarinePatternANIX 10 10 10
 firearm_ammo_override British ArmyInfantryOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_CharlevilleIXXII 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_NewLandPatternBrownBess 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_CharlevilleGuardPattern 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_NewLandLightInfantryPatternBrownBess 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_CharlevilleDragoonPattern 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_Russian_1808 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_Russian_1808_Guard 10 10 10
+firearm_ammo_override British ArmyInfantryOfficer Musket_Russian_1808_Light 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_SeaServiceBrownBess 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_CharlevilleMarinePatternANIX 10 10 10
 firearm_ammo_override French ArmyInfantryOfficer Musket_IndiaPatternBrownBess 10 10 10
-firearm_ammo_override Prussian ArmyInfantryOfficer Musket_IndiaPatternBrownBess 10 10 10
-firearm_ammo_override Russian ArmyInfantryOfficer Musket_IndiaPatternBrownBess 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_CharlevilleIXXII 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_NewLandPatternBrownBess 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_CharlevilleGuardPattern 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_NewLandLightInfantryPatternBrownBess 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_CharlevilleDragoonPattern 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_Russian_1808 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_Russian_1808_Guard 10 10 10
+firearm_ammo_override French ArmyInfantryOfficer Musket_Russian_1808_Light 10 10 10
+firearm_ammo_override British ArmyLineInfantry Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override British ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_Russian_1808 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override British ArmyLineInfantry Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override French ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Prussian ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Russian ArmyLineInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_Russian_1808 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override French ArmyLineInfantry Musket_Russian_1808_Light 20 20 20
 firearm_ammo_override British Rifleman Rifle_Pattern1800Infantry 20 20 20
+firearm_ammo_override British Rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 20 20 20
+firearm_ammo_override British Rifleman Rifle_Russian_1806 20 20 20
 firearm_ammo_override French Rifleman Rifle_Pattern1800Infantry 20 20 20
-firearm_ammo_override Prussian Rifleman Rifle_Pattern1800Infantry 20 20 20
-firearm_ammo_override Russian Rifleman Rifle_Pattern1800Infantry 20 20 20
-firearm_ammo_override British Carpenter Blunderbuss_Variation2 15 15 15
-firearm_ammo_override French Carpenter Blunderbuss_Variation2 15 15 15
-firearm_ammo_override Prussian Carpenter Blunderbuss_Variation2 15 15 15
-firearm_ammo_override Russian Carpenter Blunderbuss_Variation2 15 15 15
+firearm_ammo_override French Rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 20 20 20
+firearm_ammo_override French Rifleman Rifle_Russian_1806 20 20 20
+firearm_ammo_override British Carpenter Blunderbuss_Variation1 10 10 10
+firearm_ammo_override British Carpenter Blunderbuss_Variation2 10 10 10
+firearm_ammo_override British Carpenter Carbine_Elliot 20 20 20
+firearm_ammo_override British Carpenter Carbine_CharlevilleCavalryIXXIII 20 20 20
+firearm_ammo_override British Carpenter Carbine_Russian_Cuirassier 20 20 20
+firearm_ammo_override French Carpenter Blunderbuss_Variation1 10 10 10
+firearm_ammo_override French Carpenter Blunderbuss_Variation2 10 10 10
+firearm_ammo_override French Carpenter Carbine_Elliot 20 20 20
+firearm_ammo_override French Carpenter Carbine_CharlevilleCavalryIXXIII 20 20 20
+firearm_ammo_override French Carpenter Carbine_Russian_Cuirassier 20 20 20
+firearm_ammo_override British Guard Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override British Guard Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override British Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British Guard Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override British Guard Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override British Guard Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override British Guard Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override British Guard Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override British Guard Musket_Russian_1808 20 20 20
+firearm_ammo_override British Guard Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override British Guard Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override French Guard Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override French Guard Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override French Guard Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Prussian Guard Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Russian Guard Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French Guard Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override French Guard Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override French Guard Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override French Guard Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override French Guard Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override French Guard Musket_Russian_1808 20 20 20
+firearm_ammo_override French Guard Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override French Guard Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override British Grenadier Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override British Grenadier Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override British Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British Grenadier Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override British Grenadier Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override British Grenadier Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override British Grenadier Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override British Grenadier Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override British Grenadier Musket_Russian_1808 20 20 20
+firearm_ammo_override British Grenadier Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override British Grenadier Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override French Grenadier Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override French Grenadier Musket_CharlevilleMarinePatternANIX 20 20 20
 firearm_ammo_override French Grenadier Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Prussian Grenadier Musket_IndiaPatternBrownBess 20 20 20
-firearm_ammo_override Russian Grenadier Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French Grenadier Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override French Grenadier Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override French Grenadier Musket_CharlevilleGuardPattern 20 20 20
+firearm_ammo_override French Grenadier Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override French Grenadier Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override French Grenadier Musket_Russian_1808 20 20 20
+firearm_ammo_override French Grenadier Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override French Grenadier Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override British LightInfantry Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override British LightInfantry Musket_CharlevilleMarinePatternANIX 20 20 20
+firearm_ammo_override British LightInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override British LightInfantry Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override British LightInfantry Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override British LightInfantry Musket_CharlevilleGuardPattern 20 20 20
 firearm_ammo_override British LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override British LightInfantry Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override British LightInfantry Musket_Russian_1808 20 20 20
+firearm_ammo_override British LightInfantry Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override British LightInfantry Musket_Russian_1808_Light 20 20 20
+firearm_ammo_override French LightInfantry Musket_SeaServiceBrownBess 20 20 20
+firearm_ammo_override French LightInfantry Musket_CharlevilleMarinePatternANIX 20 20 20
+firearm_ammo_override French LightInfantry Musket_IndiaPatternBrownBess 20 20 20
+firearm_ammo_override French LightInfantry Musket_CharlevilleIXXII 20 20 20
+firearm_ammo_override French LightInfantry Musket_NewLandPatternBrownBess 20 20 20
+firearm_ammo_override French LightInfantry Musket_CharlevilleGuardPattern 20 20 20
 firearm_ammo_override French LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
-firearm_ammo_override Prussian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
-firearm_ammo_override Russian LightInfantry Musket_NewLandLightInfantryPatternBrownBess 20 20 20
+firearm_ammo_override French LightInfantry Musket_CharlevilleDragoonPattern 20 20 20
+firearm_ammo_override French LightInfantry Musket_Russian_1808 20 20 20
+firearm_ammo_override French LightInfantry Musket_Russian_1808_Guard 20 20 20
+firearm_ammo_override French LightInfantry Musket_Russian_1808_Light 20 20 20
+
+firearm_ammo_override British ArmyInfantryOfficer Pistol_SeaService 15 15 15
+firearm_ammo_override British ArmyInfantryOfficer Pistol_XIII 15 15 15
+firearm_ammo_override British ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British ArmyInfantryOfficer Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French ArmyInfantryOfficer Pistol_SeaService 15 15 15
+firearm_ammo_override French ArmyInfantryOfficer Pistol_XIII 15 15 15
+firearm_ammo_override French ArmyInfantryOfficer Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French ArmyInfantryOfficer Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override British ArmyLineInfantry Pistol_SeaService 15 15 15
+firearm_ammo_override British ArmyLineInfantry Pistol_XIII 15 15 15
+firearm_ammo_override British ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British ArmyLineInfantry Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French ArmyLineInfantry Pistol_SeaService 15 15 15
+firearm_ammo_override French ArmyLineInfantry Pistol_XIII 15 15 15
+firearm_ammo_override French ArmyLineInfantry Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French ArmyLineInfantry Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override British Carpenter Pistol_SeaService 15 15 15
+firearm_ammo_override British Carpenter Pistol_XIII 15 15 15
+firearm_ammo_override British Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Carpenter Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French Carpenter Pistol_SeaService 15 15 15
+firearm_ammo_override French Carpenter Pistol_XIII 15 15 15
+firearm_ammo_override French Carpenter Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Carpenter Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override British Guard Pistol_SeaService 15 15 15
+firearm_ammo_override British Guard Pistol_XIII 15 15 15
+firearm_ammo_override British Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Guard Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French Guard Pistol_SeaService 15 15 15
+firearm_ammo_override French Guard Pistol_XIII 15 15 15
+firearm_ammo_override French Guard Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Guard Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override British Grenadier Pistol_SeaService 15 15 15
+firearm_ammo_override British Grenadier Pistol_XIII 15 15 15
+firearm_ammo_override British Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Grenadier Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French Grenadier Pistol_SeaService 15 15 15
+firearm_ammo_override French Grenadier Pistol_XIII 15 15 15
+firearm_ammo_override French Grenadier Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Grenadier Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override British Surgeon Pistol_SeaService 15 15 15
+firearm_ammo_override British Surgeon Pistol_XIII 15 15 15
+firearm_ammo_override British Surgeon Pistol_NewLandPattern 15 15 15
+firearm_ammo_override British Surgeon Pistol_Russian_1809_Pistol 15 15 15
+firearm_ammo_override French Surgeon Pistol_SeaService 15 15 15
+firearm_ammo_override French Surgeon Pistol_XIII 15 15 15
+firearm_ammo_override French Surgeon Pistol_NewLandPattern 15 15 15
+firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2473910400 # cs_havana (1.6)
