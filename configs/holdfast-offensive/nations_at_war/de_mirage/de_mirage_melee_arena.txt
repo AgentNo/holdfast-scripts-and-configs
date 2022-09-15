@@ -24,6 +24,10 @@ friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
 class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
 
 # VICTORY FLAG
 dynamic_capture_point_enabled true
