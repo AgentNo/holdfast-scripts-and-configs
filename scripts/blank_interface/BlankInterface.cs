@@ -140,9 +140,9 @@ public class BlankInterface : IHoldfastSharedMethods
     public void OnVehiclePacket(int vehicleId, Vector2 inputAxis, bool shift, bool strafe, PlayerVehicleActions[] actionCollection) {
     }
 
-    public void OnOfficerOrderStart(int officerPlayerId, OfficerOrderType officerOrderType, Vector3 orderPosition, float orderRotationY, int voicePhraseRandomIndex) {
+    public void OnOfficerOrderStart(int officerPlayerId, HighCommandOrderType highCommandOrderType, Vector3 orderPosition, float orderRotationY, int voicePhraseRandomIndex) {
     }
 
-    public void OnOfficerOrderStop(int officerPlayerId, OfficerOrderType officerOrderType) {
+    public void OnOfficerOrderStop(int officerPlayerId, HighCommandOrderType highCommandOrderType) {
     }
 }
