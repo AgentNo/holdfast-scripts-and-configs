@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 16th September 2022
+- Updated Spammy's Chat Filter to v. 1.0.5
+
 # 15th September 2022 
 - Updated all CSHO configs to use the new weapon and ammo override system
 - Re-named `OfficerOrderType` to `HighCommandOrderType` in line with v.2.8 IHoldfastSharedMethods2 updates. This affects the following scripts:
