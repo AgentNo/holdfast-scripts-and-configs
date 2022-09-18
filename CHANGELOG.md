@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 18th September 2022
+- Fixed mod_variable handling in CSHO master configs
+
 # 16th September 2022
 - Updated Spammy's Chat Filter to v. 1.0.5
 
