@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 30th September 2022
+- Fixed issue in Spammy's Chat Filter where output logs for players leaving were incorrectly formatted (v. 1.0.6)
+
 # 18th September 2022
 - Fixed mod_variable handling in CSHO master configs
 

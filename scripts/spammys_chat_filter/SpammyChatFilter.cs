@@ -85,8 +85,8 @@ public class SpammyChatFilter : IHoldfastSharedMethods {
     public void OnPlayerLeft(int playerId) {
         // If a player has left, remove them from the dictionary
         if (playerSlapList.ContainsKey(playerId)) {
+            Debug.Log(string.Format("SCF: Player {0} left the server, player removed from watch list", playerId));
             playerSlapList.Remove(playerId);
-            Debug.Log("SCF: Player {0} left the server, player removed from watch list");
         }
     }
 
