@@ -13,6 +13,7 @@ public class BlankInterface : IHoldfastSharedMethods {
     private Dictionary<PlayerClass, int> classHpOverrides = new Dictionary<PlayerClass, int>();
     private bool factionOverride = false;
     private FactionCountry factionToApply;
+    private float timeRemaining;
 
     public void OnIsServer(bool server) {
         Debug.Log("CHPM: Starting load...");
@@ -98,8 +99,13 @@ public class BlankInterface : IHoldfastSharedMethods {
 
     private void overrideClassHp(int playerId, PlayerClass playerClass, FactionCountry playerFaction) {
         Debug.Log(string.Format("CHPM: Player {0} spawned as class {1} in faction (2), applying HP override of {3}", playerId, playerClass, playerFaction, classHpOverrides[playerClass]));
-        var rcSlapCommand = string.Format("serverAdmin slap {0} {1}", playerId, classHpOverrides[playerClass]);
+        int roundTimeRemaining = (int)timeRemaining - 2;
+        var rcSlapCommand = string.Format("delayed {0} serverAdmin slap {1} {2}", roundTimeRemaining, playerId, classHpOverrides[playerClass]);
         f1MenuInputField.onEndEdit.Invoke(rcSlapCommand);
+    }
+
+    public void OnUpdateTimeRemaining(float time) {
+        timeRemaining = time;
     }
 
     public void OnSyncValueState(int value) {
@@ -109,9 +115,6 @@ public class BlankInterface : IHoldfastSharedMethods {
     }
 
     public void OnUpdateElapsedTime(float time) {
-    }
-
-    public void OnUpdateTimeRemaining(float time) {
     }
 
     public void OnIsClient(bool client, ulong steamId) {
