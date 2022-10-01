@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 1st October 2022
+- Added faction override ability to Spammy's Class HP Manager (v. 1.0.6)
+
 # 30th September 2022
 - Fixed issue in Spammy's Chat Filter where output logs for players leaving were incorrectly formatted (v. 1.0.6)
 - Added Spammy's Class HP Manager (v. 1.0.5)

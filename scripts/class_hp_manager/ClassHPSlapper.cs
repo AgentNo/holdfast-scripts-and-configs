@@ -11,6 +11,8 @@ using System.Collections.Generic;
 public class BlankInterface : IHoldfastSharedMethods {
     private InputField f1MenuInputField;
     private Dictionary<PlayerClass, int> classHpOverrides = new Dictionary<PlayerClass, int>();
+    private bool factionOverride = false;
+    private FactionCountry factionToApply;
 
     public void OnIsServer(bool server) {
         Debug.Log("CHPM: Starting load...");
@@ -18,7 +20,6 @@ public class BlankInterface : IHoldfastSharedMethods {
         var canvases = Resources.FindObjectsOfTypeAll<Canvas>();
         for (int i = 0; i < canvases.Length; i++) {
             if (string.Compare(canvases[i].name, "Game Console Panel", true) == 0) {
-                //Inside this, now we need to find the input field where the player types messages.
                 f1MenuInputField = canvases[i].GetComponentInChildren<InputField>(true);
                 if (f1MenuInputField != null) {
                     Debug.Log("CHPM: Found the Game Console Panel");
@@ -40,26 +41,9 @@ public class BlankInterface : IHoldfastSharedMethods {
             if (splitData[0] == "CHPM") {
                 Debug.Log("CHPM: Found a variable, parsing argument...");
                 if (splitData[1] == "chpm_class_override") {
-                    string[] classArg = splitData[2].Split(',');
-                    Debug.Log(string.Format("CHPM: Attempting to parse class HP override for class {0}", classArg[0]));
-
-                    PlayerClass playerClass;
-                    if (System.Enum.TryParse<PlayerClass>(classArg[0], out playerClass)) {
-                        int hpOverride;
-                        Debug.Log("CHPM: Attempting to parse HP override...");
-                        if (int.TryParse(classArg[1], out hpOverride)) {
-                            if(classHpOverrides.ContainsKey(playerClass)) {
-                                Debug.Log(string.Format("CHPM: Configuration for class {0} already defined, skipping argument...", classArg[0]));
-                            } else {
-                                Debug.Log(string.Format("CHPM: Class {0} default HP will be overridden for {1} HP", classArg[0], hpOverride));
-                                classHpOverrides.Add(playerClass, hpOverride);
-                            }
-                        } else {
-                            Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - ensure it is a valid number!", classArg[0]));
-                        }
-                    } else {
-                        Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - class enum is not valid", classArg[0]));
-                    }
+                    getClassHpOverrideArgs(splitData);
+                } else if (splitData[1] == "chpm_faction_override") {
+                    getFactionOverrideArgs(splitData);
                 } else {
                     Debug.Log(string.Format("CHPM: Syntax error parsing variable: '{0}'", splitData[1]));
                 }
@@ -69,10 +53,53 @@ public class BlankInterface : IHoldfastSharedMethods {
 
     public void OnPlayerSpawned(int playerId, int spawnSectionId, FactionCountry playerFaction, PlayerClass playerClass, int uniformId, GameObject playerObject) {
         if (classHpOverrides.ContainsKey(playerClass)) {
-            Debug.Log(string.Format("CHPM: Player {0} spawned as class {1}, applying HP override of {2}", playerId, playerClass, classHpOverrides[playerClass]));
-            var rcSlapCommand = string.Format("serverAdmin slap {0} {1}", playerId, classHpOverrides[playerClass]);
-            f1MenuInputField.onEndEdit.Invoke(rcSlapCommand);
+            if (!factionOverride) {
+                overrideClassHp(playerId, playerClass, playerFaction);
+            } else if (factionOverride && playerFaction == factionToApply) {
+                overrideClassHp(playerId, playerClass, playerFaction);
+            } else {
+                Debug.Log("CHPM: Player does not meet criteria for HP override, skipping...");
+            }
         }
+    }
+
+    private void getClassHpOverrideArgs(string[] splitData) {
+        string[] classArg = splitData[2].Split(',');
+        Debug.Log(string.Format("CHPM: Attempting to parse class HP override for class {0}", classArg[0]));
+
+        PlayerClass playerClass;
+        if (System.Enum.TryParse<PlayerClass>(classArg[0], out playerClass)) {
+            int hpOverride;
+            Debug.Log("CHPM: Attempting to parse HP override...");
+            if (int.TryParse(classArg[1], out hpOverride)) {
+                if (classHpOverrides.ContainsKey(playerClass)) {
+                    Debug.Log(string.Format("CHPM: Configuration for class {0} already defined, skipping argument...", classArg[0]));
+                } else {
+                    Debug.Log(string.Format("CHPM: Class {0} default HP will be overridden for {1} HP", classArg[0], hpOverride));
+                    classHpOverrides.Add(playerClass, hpOverride);
+                }
+            } else {
+                Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - ensure it is a valid number!", classArg[0]));
+            }
+        } else {
+            Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - class enum is not valid", classArg[0]));
+        }
+    }
+
+    private void getFactionOverrideArgs(string[] splitData) {
+        Debug.Log("CHPM: Attempting to parse a target faction...");
+        if (System.Enum.TryParse<FactionCountry>(splitData[2], out factionToApply)) {
+            factionOverride = true;
+            Debug.Log(string.Format("CHPM: Found a faction override, HP overrides will only be applied to {0}", splitData[2]));
+        } else {
+            Debug.Log(string.Format("CHPM: Syntax error encountered when parsing faction override - '{0}' is not a valid faction name", splitData[2]));
+        }
+    }
+
+    private void overrideClassHp(int playerId, PlayerClass playerClass, FactionCountry playerFaction) {
+        Debug.Log(string.Format("CHPM: Player {0} spawned as class {1} in faction (2), applying HP override of {3}", playerId, playerClass, playerFaction, classHpOverrides[playerClass]));
+        var rcSlapCommand = string.Format("serverAdmin slap {0} {1}", playerId, classHpOverrides[playerClass]);
+        f1MenuInputField.onEndEdit.Invoke(rcSlapCommand);
     }
 
     public void OnSyncValueState(int value) {
