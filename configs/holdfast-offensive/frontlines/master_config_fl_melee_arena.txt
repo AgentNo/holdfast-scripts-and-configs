@@ -184,6 +184,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 20
@@ -298,7 +299,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -308,6 +308,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 20
@@ -422,7 +423,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -432,6 +432,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -546,7 +547,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -556,6 +556,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -670,7 +671,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -680,6 +680,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -794,7 +795,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -804,6 +804,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -918,7 +919,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -928,6 +928,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1042,7 +1043,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1052,6 +1052,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1166,7 +1167,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1176,6 +1176,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1290,7 +1291,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1300,6 +1300,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1414,7 +1415,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1424,6 +1424,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1538,7 +1539,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1548,6 +1548,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1662,7 +1663,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1672,6 +1672,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1786,7 +1787,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1796,6 +1796,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -1910,7 +1911,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -1920,6 +1920,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2034,7 +2035,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2044,6 +2044,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2158,7 +2159,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2168,6 +2168,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2282,7 +2283,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2292,6 +2292,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2406,7 +2407,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2416,6 +2416,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2530,7 +2531,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2540,6 +2540,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2654,7 +2655,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2664,6 +2664,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2778,7 +2779,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2788,6 +2788,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -2902,7 +2903,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -2912,6 +2912,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -3026,7 +3027,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
@@ -3036,6 +3036,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -3150,7 +3151,6 @@ load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end
