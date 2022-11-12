@@ -1,7 +1,11 @@
 # CHANGELOG
 
+# 12th November 2022
+- Added Cannon Racing config
+
 # 24th October 2022
 - Improved faction class overriding in Spammy's Class HP Manager (v. 1.0.8)
+
 # 12th October 2022
 - Updated all Melee Arena configs to use the new `melee_weapons_only false` comamnd rather than `rc set meleeArenaAllowShooting`
 

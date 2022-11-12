@@ -1,0 +1,54 @@
+# Remember to change maximum_players before deploying!
+
+mods_installed 2887856591 # Cannon Racing - Plains
+
+#X = Cannon Racing [Army Assault] - Calm | Morning (9)
+ 
+!map_rotation start
+map_name ModMap                                       
+load_mod 2341088167
+game_mode ArmyAssault
+game_type Hardcore
+round_time_minutes 15
+reinforcements_per_faction 0
+wave_spawn_time_seconds -1
+wave_spawn_vehicle_time_seconds 10
+spawn_immunity_timer 2
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 40
+nature_preset Forest_Calm_Day
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 0
+faction_attacking british
+faction_defending french
+ 
+#Spawn Override
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+ 
+#Automated Commands - Live
+ 
+rc set allowFiring true
+rc set characterGodMode true # Invincibility to prevent salt
+rc set cannonMoverRotationMultiplier 0 # Set rot and move speed to 0
+rc set cannonMoverSpeedMultiplier 0
+rc set characterRespawntime 1
+rc set characterVehicleRespawnTime 1
+ 
+rc delayed 870 broadcast Welcome to Cannon Racing! Grab a partner and a cannon, live at 13:30!
+rc delayed 820 broadcast Ready...
+rc delayed 815 broadcast Set...
+ 
+rc delayed 810 set cannonMoverRotationMultiplier 15
+rc delayed 810 set cannonMoverSpeedMultiplier 15
+ 
+rc delayed 810 broadcast GO GO GO #Live!
+ 
+# Loaded modifications
+load_mod 2887856591 # Cannon Racing - Plains
+ 
+!map_rotation end
