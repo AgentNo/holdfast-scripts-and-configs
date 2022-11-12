@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# 24th October 2022
+- Improved faction class overriding in Spammy's Class HP Manager (v. 1.0.8)
+# 12th October 2022
+- Updated all Melee Arena configs to use the new `melee_weapons_only false` comamnd rather than `rc set meleeArenaAllowShooting`
+
 # 1st October 2022
 - Added faction override ability to Spammy's Class HP Manager (v. 1.0.4)
 - Added an attempted fix at HP bar display issues (v. 1.0.6)

@@ -5,6 +5,7 @@ mods_installed 2828487299 # CS 1.6 Sound Pack (NaW)
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
+melee_weapons_only false
 game_type hardcore
 round_time_minutes 10
 round_spawn_close_timer_seconds 30
@@ -239,7 +240,6 @@ load_mod 2469751266 # cs_estate (1.6)
 load_mod 2828487299 # CS 1.6 Sound Pack (NaW)
 
 # RC Commands
-rc set meleeArenaAllowShooting true
 rc set characterWeaponDamageScale 0.75
  
 !map_rotation end

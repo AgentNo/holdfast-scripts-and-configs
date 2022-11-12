@@ -10,9 +10,10 @@ using System.Collections.Generic;
 
 public class BlankInterface : IHoldfastSharedMethods {
     private InputField f1MenuInputField;
-    private Dictionary<PlayerClass, int> classHpOverrides = new Dictionary<PlayerClass, int>();
-    private bool factionOverride = false;
-    private FactionCountry factionToApply;
+    private Dictionary<PlayerClass, int> attackingClassHpOverrides = new Dictionary<PlayerClass, int>();
+    private Dictionary<PlayerClass, int> defendingClassHpOverrides = new Dictionary<PlayerClass, int>();
+    private FactionCountry FACTION_ATTACKING;
+    private FactionCountry FACTION_DEFENDING;
     private float timeRemaining;
 
     public void OnIsServer(bool server) {
@@ -43,8 +44,6 @@ public class BlankInterface : IHoldfastSharedMethods {
                 Debug.Log("CHPM: Found a variable, parsing argument...");
                 if (splitData[1] == "chpm_class_override") {
                     getClassHpOverrideArgs(splitData);
-                } else if (splitData[1] == "chpm_faction_override") {
-                    getFactionOverrideArgs(splitData);
                 } else {
                     Debug.Log(string.Format("CHPM: Syntax error parsing variable: '{0}'", splitData[1]));
                 }
@@ -53,59 +52,73 @@ public class BlankInterface : IHoldfastSharedMethods {
     }
 
     public void OnPlayerSpawned(int playerId, int spawnSectionId, FactionCountry playerFaction, PlayerClass playerClass, int uniformId, GameObject playerObject) {
-        if (classHpOverrides.ContainsKey(playerClass)) {
-            if (!factionOverride) {
-                overrideClassHp(playerId, playerClass, playerFaction);
-            } else if (factionOverride && playerFaction == factionToApply) {
-                overrideClassHp(playerId, playerClass, playerFaction);
-            } else {
-                Debug.Log("CHPM: Player does not meet criteria for HP override, skipping...");
+        if (FACTION_ATTACKING == playerFaction) {
+            if (attackingClassHpOverrides.ContainsKey(playerClass)) {
+                overrideClassHp(playerId, playerClass, playerFaction, attackingClassHpOverrides[playerClass]);
             }
+        } else if (FACTION_DEFENDING == playerFaction) {
+            if (defendingClassHpOverrides.ContainsKey(playerClass)) {
+                overrideClassHp(playerId, playerClass, playerFaction, defendingClassHpOverrides[playerClass]);
+            }
+        } else {
+            Debug.Log("CHPM: Error comparing player faction to server faction. If you see this, contact the mod creator for assistance.");
         }
     }
 
     private void getClassHpOverrideArgs(string[] splitData) {
         string[] classArg = splitData[2].Split(',');
-        Debug.Log(string.Format("CHPM: Attempting to parse class HP override for class {0}", classArg[0]));
+        if (classArg.Length == 3) {
+            Debug.Log(string.Format("CHPM: Attempting to parse class HP override for {0} class {1}", classArg[0], classArg[1]));
 
-        PlayerClass playerClass;
-        if (System.Enum.TryParse<PlayerClass>(classArg[0], out playerClass)) {
-            int hpOverride;
-            Debug.Log("CHPM: Attempting to parse HP override...");
-            if (int.TryParse(classArg[1], out hpOverride)) {
-                if (classHpOverrides.ContainsKey(playerClass)) {
-                    Debug.Log(string.Format("CHPM: Configuration for class {0} already defined, skipping argument...", classArg[0]));
+            PlayerClass playerClass;
+            if (System.Enum.TryParse<PlayerClass>(classArg[1], out playerClass)) {
+                int hpOverride;
+                Debug.Log("CHPM: Attempting to parse HP override...");
+                if (int.TryParse(classArg[2], out hpOverride)) {
+                    setUpClassHpOverrideRuleFromArgument(classArg, playerClass, hpOverride);
                 } else {
-                    Debug.Log(string.Format("CHPM: Class {0} default HP will be overridden for {1} HP", classArg[0], hpOverride));
-                    classHpOverrides.Add(playerClass, hpOverride);
+                    Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - ensure it is a valid number!", classArg[1]));
                 }
             } else {
-                Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - ensure it is a valid number!", classArg[0]));
+                Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - class enum is not valid", classArg[1]));
             }
         } else {
-            Debug.Log(string.Format("CHPM: Error parsing HP override for class {0} - class enum is not valid", classArg[0]));
+            Debug.Log(string.Format("CHPM: Error parsing parameter - malformed argument passed."));
         }
     }
 
-    private void getFactionOverrideArgs(string[] splitData) {
-        Debug.Log("CHPM: Attempting to parse a target faction...");
-        if (System.Enum.TryParse<FactionCountry>(splitData[2], out factionToApply)) {
-            factionOverride = true;
-            Debug.Log(string.Format("CHPM: Found a faction override, HP overrides will only be applied to {0}", splitData[2]));
-        } else {
-            Debug.Log(string.Format("CHPM: Syntax error encountered when parsing faction override - '{0}' is not a valid faction name", splitData[2]));
+    private void setUpClassHpOverrideRuleFromArgument(string[] classArg, PlayerClass playerClass, int hpOverride) {
+        if (classArg[0] == "ATTACK") {
+            if (attackingClassHpOverrides.ContainsKey(playerClass)) {
+                Debug.Log(string.Format("CHPM: Configuration for {0} class {1} already defined, skipping argument...", classArg[0], classArg[1]));
+            } else {
+                Debug.Log(string.Format("CHPM: {0} Class {1} default HP will be overridden for {2} HP", classArg[0], classArg[1], hpOverride));
+                attackingClassHpOverrides.Add(playerClass, hpOverride);
+            }
+        } else if (classArg[0] == "DEFEND") {
+            if (defendingClassHpOverrides.ContainsKey(playerClass)) {
+                Debug.Log(string.Format("CHPM: Configuration for {0} class {1} already defined, skipping argument...", classArg[0], classArg[1]));
+            } else {
+                Debug.Log(string.Format("CHPM: {0} Class {1} default HP will be overridden for {2} HP", classArg[0], classArg[1], hpOverride));
+                defendingClassHpOverrides.Add(playerClass, hpOverride);
+            }
         }
     }
 
-    private void overrideClassHp(int playerId, PlayerClass playerClass, FactionCountry playerFaction) {
-        Debug.Log(string.Format("CHPM: Player {0} spawned as class {1} in faction (2), applying HP override of {3}", playerId, playerClass, playerFaction, classHpOverrides[playerClass]));
+    private void overrideClassHp(int playerId, PlayerClass playerClass, FactionCountry playerFaction, int hpOverride) {
+        Debug.Log(string.Format("CHPM: Player {0} spawned as class {1} in faction (2), applying HP override of {3}", playerId, playerClass, playerFaction, hpOverride));
         int roundTimeRemaining = (int)timeRemaining - 2;
-        var rcSlapCommand = string.Format("delayed {0} serverAdmin slap {1} {2}", roundTimeRemaining, playerId, classHpOverrides[playerClass]);
+        var rcSlapCommand = string.Format("delayed {0} serverAdmin slap {1} {2}", roundTimeRemaining, playerId, hpOverride);
         f1MenuInputField.onEndEdit.Invoke(rcSlapCommand);
     }
 
     public void OnUpdateTimeRemaining(float time) {
         timeRemaining = time;
+    }
+    public void OnRoundDetails(int roundId, string serverName, string mapName, FactionCountry attackingFaction, FactionCountry defendingFaction, GameplayMode gameplayMode, GameType gameType) {
+        // Get which faction is attacking/defending as this information is not passed in onPlayerSpawned
+        FACTION_ATTACKING = attackingFaction;
+        FACTION_DEFENDING = defendingFaction;
     }
 
     public void OnSyncValueState(int value) {
@@ -142,9 +155,6 @@ public class BlankInterface : IHoldfastSharedMethods {
     }
 
     public void OnTextMessage(int playerId, TextChatChannel channel, string text) {
-    }
-
-    public void OnRoundDetails(int roundId, string serverName, string mapName, FactionCountry attackingFaction, FactionCountry defendingFaction, GameplayMode gameplayMode, GameType gameType) {
     }
 
     public void OnPlayerBlock(int attackingPlayerId, int defendingPlayerId) {
