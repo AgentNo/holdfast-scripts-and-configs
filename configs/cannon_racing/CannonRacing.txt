@@ -19,7 +19,7 @@ allow_faction_switching true
 allow_spectating true
 minimum_players -1
 maximum_players 40
-nature_preset Forest_Calm_Day
+nature_preset Forest_Clear_Day
 friendly_fire false
 friendly_fire_melee_bounce true
 damage_split 0

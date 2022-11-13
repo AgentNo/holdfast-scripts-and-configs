@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# 13th November 2022
+- Fixed weather and game mode on Cannon Racing config
+
 # 12th November 2022
 - Added Cannon Racing config
 
