@@ -7,7 +7,7 @@ mods_installed 2887856591 # Cannon Racing - Plains
 !map_rotation start
 map_name ModMap                                       
 load_mod 2341088167
-game_mode ArmyAssault
+game_mode ArmyBattlefield
 game_type Hardcore
 round_time_minutes 15
 reinforcements_per_faction 0
