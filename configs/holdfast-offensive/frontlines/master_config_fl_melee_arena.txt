@@ -3,6 +3,10 @@
 # NOTE: For Melee Arena configurations, there is a bug where the weapon overrides will not load correctly
 # when first launching a map. To fix this, simply reload the map through the RA console. As long as the server
 # does not restart, any subsequent RA rotation in this config will work.
+
+# Also for sake of me forgetting the config every time:
+# ALLIED = CT (defending defuse, attacking hostage)
+# CENTRAL = T (attacking defuse, defending hostage)
 #----------------------------------------------------------------------------------------#
 
 ###- Server Intro Message
@@ -44,6 +48,7 @@ mods_installed 2521544540 # de_storm (1.6)
 mods_installed 2590035962 # de_survivor (1.6)
 mods_installed 2523430502 # de_train (1.6)
 mods_installed 2831027030 # de_tuscan (1.6)
+mods_installed 2909706441 # awp_india (1.6)
 # - SOUNDS AND SCRIPTS
 mods_installed_server_only 2809830396 # Freeze!
 mods_installed_server_only 2813465436 # No OwO/UwU Allowed!
@@ -73,8 +78,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Sandstorm
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -180,7 +185,132 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#2 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night
+#1 = de_dust (1.6) (Battlefield) - Sandstorm | Day - STAGING (Alternative)
+!map_rotation start
+map_name ModMap
+game_mode ArmyBattlefield
+round_time_minutes 60
+reinforcements_per_faction 99999
+wave_spawn_time_seconds 3
+wave_spawn_vehicle_time_seconds 3
+spawn_immunity_timer 5
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 8
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 50
+nature_preset Sand_Sandstorm
+faction_attacking central
+faction_defending allied
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+max_accumulated_faction_points -1
+class_system_orders false
+population_verylow_playable true
+population_low_playable true
+population_medium_playable true
+population_high_playable true
+
+# VICTORY FLAG
+dynamic_capture_point_enabled true
+dynamic_capture_point_position 293.35 41.08 291.03
+dynamic_capture_point_auto_active_time 0
+dynamic_capture_point_capture_duration 5
+dynamic_capture_point_max_capture_player_count 20
+
+# RULES 
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><color=\#989898>GENERAL RULES</color></b></size><br>• First to 10 rounds wins!<br>• Do not move out of spawn before live.<br>• No excessive VOIP spam during the event.<br>• Play your objectives! Hold E to plant bombs and rescue hostages.<br>
+
+# SPAWN OVERRIDES
+spawn_override A ArmyInfantryOfficer 5
+spawn_override A ArmyLineInfantry 150
+spawn_override A Surgeon 5
+spawn_override A Sapper 0
+spawn_override A Cannoneer 0
+spawn_override B ArmyInfantryOfficer 5 
+spawn_override B ArmyLineInfantry 150
+spawn_override B Surgeon 5
+spawn_override B Sapper 0
+spawn_override B Cannoneer 0
+
+# WEAPONS OVERRIDE
+starting_weapons_selection_override Allied ArmyInfantryOfficer 1 1 WW1_RifleUnbayonetted WW1_Revolver,WW1_SmokeGrenade
+starting_weapons_selection_override Allied ArmyLineInfantry 2 2 WW1_RifleUnbayonetted WW1_Revolver,WW1_ExplosiveGrenade WW1_TrenchKnife
+starting_weapons_selection_override Allied Surgeon 1 1 WW1_Revolver WW1_TrenchKnife
+starting_weapons_selection_override Central ArmyInfantryOfficer 1 1 WW1_RifleUnbayonetted WW1_Revolver,WW1_SmokeGrenade
+starting_weapons_selection_override Central ArmyLineInfantry 2 2 WW1_RifleUnbayonetted WW1_Revolver,WW1_ExplosiveGrenade WW1_TrenchKnife
+starting_weapons_selection_override Central Surgeon 1 1 WW1_Revolver WW1_TrenchKnife
+
+# FIREARM AMMO OVERRIDE
+## PISTOLS
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Allied Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Central Surgeon Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Webley_Revolver_MKIV 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Modele_1892_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_M1917_Revolver 24 6 24
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_C78_Revolver 24 6 24
+## RIFLES
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_M1903_Springfield_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_Lebel_Model_1886_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_LeeEnfield_MKIII_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Mauser_Gewehr_98_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_M1903_Springfield_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_Lebel_Model_1886_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_LeeEnfield_MKIII_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Mauser_Gewehr_98_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_M1903_Springfield_No_Bayonet 35 5 35
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Lebel_Model_1886_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_LeeEnfield_MKIII_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Mauser_Gewehr_98_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_M1903_Springfield_No_Bayonet 35 5 35
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Lebel_Model_1886_No_Bayonet 35 5 35
+## SMOKE GRENADES
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Allied ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_No37_MKI 1 1 1
+firearm_ammo_override Central ArmyInfantryOfficer Frontlines_HandNebelBombe 1 1 1
+## EXPLOSIVE GRENADES
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Allied ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_MillsGrenade_MKII 1 1 1
+firearm_ammo_override Central ArmyLineInfantry Frontlines_Stielhandgranate_1916 1 1 1
+
+# Loaded Modifications
+load_mod 2909706441 # awp_india (1.6)
+load_mod_server_only 2809830396 # Freeze!
+load_mod_server_only 2813465436 # No OwO/UwU Allowed!
+
+# RC Commands
+rc set characterWeaponDamageScale 0.75
+
+!map_rotation end
+
+
+#3 - cs_747 (1.6) (Hardcore Melee Arena) - Calm | Night
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -198,8 +328,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Dark_Night
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -304,7 +434,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#3 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Morning
+#4 - de_airstrip (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -322,8 +452,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Clear_Dawn
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -428,7 +558,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#4 - cs_assault (1.6) (Hardcore Melee Arena) - Calm | Night
+#5 - cs_assault (1.6) (Hardcore Melee Arena) - Calm | Night
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -446,8 +576,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Dark_Night
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -552,7 +682,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#5 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening
+#6 - de_aztec (1.6) (Hardcore Melee Arena) - Storm | Evening
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -570,8 +700,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Storm
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -676,7 +806,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#6 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night 
+#7 - cs_backalley (1.6) (Hardcore Melee Arena) - Calm | Night 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -694,8 +824,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Dark_Night
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -800,7 +930,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#7 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day 
+#8 - de_chateau (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -818,8 +948,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -924,7 +1054,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#8 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 
+#9 - de_cbble (1.6) (Hardcore Melee Arena) - Calm | Morning 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -942,8 +1072,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Clear_Dawn
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1048,7 +1178,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#9 - de_dust (1.6) (Hardcore Melee Arena) - Sandstorm | Day 
+#10 - de_dust (1.6) (Hardcore Melee Arena) - Sandstorm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1066,8 +1196,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Sandstorm
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1172,7 +1302,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#10 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day 
+#11 - de_dust2 (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1190,8 +1320,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1296,7 +1426,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#11 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening 
+#12 - cs_estate (1.6) (Hardcore Melee Arena) - Calm | Evening 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1314,8 +1444,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Dawn
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1420,7 +1550,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#12 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night 
+#13 - cs_havana (1.6) (Hardcore Melee Arena) - Calm | Night 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1438,8 +1568,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Dark_Night
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1544,7 +1674,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#13 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Day
+#14 - de_inferno (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1562,8 +1692,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1668,7 +1798,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#14 - cs_italy (1.6) (Hardcore Melee Arena) - Calm | Day
+#15 - cs_italy (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1686,8 +1816,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1792,7 +1922,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#15 - cs_militia (1.6) (Hardcore Melee Arena) - Sandstorm | Morning
+#16 - cs_militia (1.6) (Hardcore Melee Arena) - Sandstorm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1810,8 +1940,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Sandstorm
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -1916,7 +2046,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#16 - de_mirage (1.6) (Hardcore Melee Arena) - Calm | Day
+#17 - de_mirage (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -1934,8 +2064,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2040,7 +2170,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#17 - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning
+#18 - de_nuke (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2058,8 +2188,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Dawn
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2164,7 +2294,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#18 - cs_office (1.6) (Hardcore Melee Arena) - Snowing | Day
+#19 - cs_office (1.6) (Hardcore Melee Arena) - Snowing | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2182,8 +2312,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Clear_Day
-faction_attacking french
-faction_defending british
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2288,7 +2418,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#19 - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Day
+#20 - as_oilrig (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2306,8 +2436,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking allied
+faction_defending central
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2412,7 +2542,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#20 - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day
+#21 - de_piranesi (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2430,8 +2560,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2536,7 +2666,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#21 - de_prodigy (1.6) (Hardcore Melee Arena) - Calm | Morning
+#22 - de_prodigy (1.6) (Hardcore Melee Arena) - Calm | Morning
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2554,8 +2684,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Ocean_Clear_Dawn
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2660,7 +2790,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#22 - de_storm (1.6) (Hardcore Melee Arena) - Storm | Day
+#23 - de_storm (1.6) (Hardcore Melee Arena) - Storm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2678,8 +2808,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Forest_Storm
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2784,7 +2914,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#23 - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
+#24 - de_survivor (1.6) (Hardcore Melee Arena) - Snowstorm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2802,8 +2932,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Snow_Snowstorm
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -2908,7 +3038,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#24 - de_train (1.6) (Hardcore Melee Arena) - Calm | Day
+#25 - de_train (1.6) (Hardcore Melee Arena) - Calm | Day
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -2926,8 +3056,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
@@ -3032,7 +3162,7 @@ rc set characterWeaponDamageScale 0.75
 !map_rotation end
 
 
-#25 - de_tuscan (1.6) (Hardcore Melee Arena) - Calm | Day 
+#26 - de_tuscan (1.6) (Hardcore Melee Arena) - Calm | Day 
 !map_rotation start
 map_name ModMap
 game_mode MeleeArena
@@ -3050,8 +3180,8 @@ allow_spectating true
 minimum_players -1
 maximum_players 50
 nature_preset Sand_Clear_Day
-faction_attacking british
-faction_defending french
+faction_attacking central
+faction_defending allied
 friendly_fire true
 friendly_fire_melee_bounce false
 damage_split 0
