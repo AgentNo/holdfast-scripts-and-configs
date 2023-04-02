@@ -3,6 +3,7 @@
 # 2nd April 2023
 - Fixed factions in CSHO master config being incorrectly set to NaW factions
 - Added awp_india (1.6) as an alternate lobby map
+- Added Faction and Sound replacer mod to all CSHO configs. This mod replaces the old sound mod on NaW configs
 
 # 13th November 2022
 - Fixed weather and game mode on Cannon Racing config
