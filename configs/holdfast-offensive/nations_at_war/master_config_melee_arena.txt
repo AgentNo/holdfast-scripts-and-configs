@@ -46,7 +46,6 @@ mods_installed 2831027030 # de_tuscan (1.6)
 # - SOUNDS AND SCRIPTS
 mods_installed_server_only 2809830396 # Freeze!
 mods_installed_server_only 2813465436 # No OwO/UwU Allowed!
-mods_installed 2956237327 # CS Factions and Sounds
 # - OTHER
 # NONE
 
@@ -292,7 +291,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
 
 # Loaded Modifications
 load_mod 2461540045 # de_dust (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -538,7 +536,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2446867040 # de_airstrip (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -784,7 +781,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2450848347 # cs_assault (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -1030,7 +1026,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2453190571 # de_aztec (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -1276,7 +1271,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2455363876 # cs_backalley (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -1522,7 +1516,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
 
 # Loaded Modifications
 load_mod 2458269436 # de_chateau (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -1768,7 +1761,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2460225321 # de_cbble (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -2014,7 +2006,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2461540045 # de_dust (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -2260,7 +2251,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2465910424 # de_dust2 (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -2506,7 +2496,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2469751266 # cs_estate (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -2752,7 +2741,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2473910400 # cs_havana (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -2998,7 +2986,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2479088774 # de_inferno (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -3244,7 +3231,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2482488478 # cs_italy (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -3490,7 +3476,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2485403695 # cs_militia (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -3732,7 +3717,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2620570960 # de_mirage (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -3978,7 +3962,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2492047106 # de_nuke (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -4224,7 +4207,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2497055633 # cs_office (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -4470,7 +4452,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2502884874 # as_oilrig (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -4716,7 +4697,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2505626269 # de_piranesi (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -4962,7 +4942,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2512247630 # de_prodigy (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -5208,7 +5187,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2521544540 # de_storm (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -5447,7 +5425,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2590035962 # de_survivor (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -5693,7 +5670,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2523430502 # de_train (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
@@ -5939,7 +5915,6 @@ firearm_ammo_override French Surgeon Pistol_Russian_1809_Pistol 15 15 15
  
 # Loaded Modifications
 load_mod 2831027030 # de_tuscan (1.6)
-load_mod 2956237327 # CS Factions and Sounds
 load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
