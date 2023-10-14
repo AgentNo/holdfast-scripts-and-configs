@@ -2,7 +2,6 @@
 
 # 14th October 2023
 - Removed Faction replacement mod from all CSHO configs. This will be added back in at a later date.
-- Re-added the sound mod until the new faction replacement mod replaces it
 - Updated CSHO frontlines config to use Alexaroth's new CSHO economy mod (DEV - this will need replaced for the actual event)
 
 # 2nd April 2023
