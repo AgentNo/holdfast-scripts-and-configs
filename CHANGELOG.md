@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# 20th October 2023
+- Updated CSHO mod to release version
+- Removed 'Freeze!' mod as this is no longer needed with CSHO
+
 # 14th October 2023
 - Removed Faction replacement mod from all CSHO configs. This will be added back in at a later date.
 - Updated CSHO frontlines config to use Alexaroth's new CSHO economy mod (DEV - this will need replaced for the actual event)

@@ -11,7 +11,7 @@
 
 ###- Server Intro Message
 server_intro_title Rush B Drop AWP!
-server_intro_body Greetings ladies and gentlemen. Welcome to the <b>87th's Counter-Strike: Holdfast Offensive!</b><br><br>Come join us on our Discord. We look forward to seeing you there. <br><br><b><color=yellow>discord.gg/epbZSQapqz</color></b>
+server_intro_body Greetings ladies and gentlemen. Welcome to <b>Counter-Strike: Holdfast Offensive</b><br><br>, hosted by the 87th Regiment of Foot. <br><br><b><color=yellow>discord.gg/epbZSQapqz</color></b>
 
 ###- Global Gameplay & Map Settings
 map_rotation_start_randomise false
@@ -41,14 +41,11 @@ mods_installed 2523430502 # de_train (1.6)
 mods_installed 2831027030 # de_tuscan (1.6)
 mods_installed 2909706441 # awp_india (1.6)
 # - SOUNDS AND SCRIPTS
-mods_installed_server_only 2809830396 # Freeze!
 mods_installed_server_only 2813465436 # No OwO/UwU Allowed!
-mods_installed 2868509617 # CSHO DEV
+mods_installed 3051582660 # CSHO 
 # - OTHER
 # NONE
 
-# MOD VARIABLES
-mod_variable freeze:authorised_users:76561198046293342,END
 
 ###- Map Rotations
 
@@ -87,7 +84,6 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
 
 # Loaded Modifications
 load_mod 2909706441 # awp_india (1.6)
-load_mod_server_only 2809830396 # Freeze!
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
 
 !map_rotation end
@@ -134,8 +130,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2446867040 # de_airstrip (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -182,8 +177,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2453190571 # de_aztec (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -230,8 +224,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2458269436 # de_chateau (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -278,8 +271,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2460225321 # de_cbble (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -326,8 +318,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2461540045 # de_dust (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -374,8 +365,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
 
 # Loaded Modifications
 load_mod 2465910424 # de_dust2 (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -422,8 +412,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2479088774 # de_inferno (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -470,8 +459,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2620570960 # de_mirage (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -518,8 +506,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2492047106 # de_nuke (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -566,8 +553,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2505626269 # de_piranesi (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -614,8 +600,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2512247630 # de_prodigy (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -662,8 +647,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2521544540 # de_storm (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -710,8 +694,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2590035962 # de_survivor (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -758,8 +741,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2523430502 # de_train (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 23051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
@@ -806,8 +788,7 @@ server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,Surgeon|<size=15><b><colo
  
 # Loaded Modifications
 load_mod 2831027030 # de_tuscan (1.6)
-load_mod 2868509617 # CSHO DEV
-load_mod_server_only 2809830396 # Freeze!
+load_mod 3051582660 # CSHO
 load_mod_server_only 2813465436 # No OwO/UwU Allowed!
  
 !map_rotation end
